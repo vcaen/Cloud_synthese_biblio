@@ -6,8 +6,23 @@ Logo          : True
 [TOC]
 
 
+# Rappel du sujet
+Dans le cycle de vie des technologies émergentes, l’informatique en nuage (« cloud computing ») est aujourd’hui en
+passe, du moins dans certaines de ses composantes, d’atteindre le « plateau de la productivité », caractéristique des
+technologies matures.
+
+L’objet de ce projet est ainsi de dresser un panorama des principales offres présentes sur le marché, des services
+offerts (services de monitoring/surveillance, de migration d’application, de gestion de plateforme...), des coûts respectifs
+des différentes offres, des principales technologies mises en œuvre.
+
+On se placera, afin de réduire le spectre de l’étude selon trois points de vue client : une entreprise souhaitant faire
+héberger son courriel sur le cloud (SaaS : Software as a Service), une entreprise souhaitant lancer un site de ecommerce de portée européenne (PaaS : Platform as a Service), enfin une entreprise souhaitant migrer (presque) tout
+son SI dans le cloud (IaaS : Infrastructure as a Service).
+
+Des critères d’aide à la décision seront proposés afin de faciliter la comparaison des offres étudiées.
+
 #Introduction
-##	Qu'est ce que lee Cloud ?	
+##	Qu'est ce que le Cloud ?	
 ##L'état de l'art	
 ### Statistique Utilisation Cloud
 ### Exemple d'utilisateur
