@@ -2,6 +2,7 @@ Title         : Synthèse Bibliographique
 Author        : Léonard Allain-Launay & Vadim Caen 
 Logo          : True
 Document Class: [11pt]book
+Bib           : biblio/zotero/zotero
 Toc Depth     : 10 
 
 
@@ -30,12 +31,24 @@ Des critères d’aide à la décision seront proposés afin de faciliter la com
 
 #Introduction
 ##	Qu'est ce que le Cloud ?	
+D'après le NIST (National Institute of Standards and Technology), le cloud est défini comme suit : 
+ "Le cloud computing est un model permettant un accès confortable, à la demande et omniprésent à un
+  ensemble de ressources numériques (i.e, réseaux, serveurs, stockage, applications et services) qui peuvent être provisionnés
+  et publiés avec un effort minimal de gestion ou d'interaction avec le fournisseur de service."
+
 ##L'état de l'art	
 ### Statistique Utilisation Cloud
 ### Exemple d'utilisateur
 
 # Offres	
 ## IaaS : Infrastucure as a Service	
+### Definition
+Un cloud IaaS est défini par la mise à disposition du client de ressources des stockage,
+réseau et de calcul (processeurs) ou autre ressources numériques fondamentales dans lesquelles
+l'utilisateur à la possibilité de déployer ou éxecuter des logiciels quelquonques, ce qui comprend des 
+systèmes d'exploitation et des applications. L'utilisateur ne gère pas ni ne contrôle l'infrastucture
+sous-jascente mais à le contrôle des systèmes d'exploitation, du stockage et des applications déployées ;
+et éventuellement un contrôle limité sur les composant réseau (i.e pare-feu) 
 ## Paas : Product as a Service
 ## SaaS	: Software as a Service
 
@@ -56,6 +69,8 @@ Des critères d’aide à la décision seront proposés afin de faciliter la com
 
 # Annexe
 ## Bibliographie
+
+[BIB]
 
 
 
