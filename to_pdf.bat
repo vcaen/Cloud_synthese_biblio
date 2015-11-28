@@ -1,1 +1,1 @@
-madoko --pdf -vv --odir=out main
+madoko --pdf -vv --odir=main\out main\main.mdk
