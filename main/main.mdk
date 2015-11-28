@@ -1,13 +1,20 @@
 Title         : Synthèse Bibliographique
 Author        : Léonard Allain-Launay & Vadim Caen 
 Logo          : True
+Document Class: [11pt]book
+Toc Depth     : 10 
 
-[TITLE]
+
 [TOC]
 
 
+[TITLE]
+
+
+
+
 # Rappel du sujet
-Dans le cycle de vie des technologies émergentes, l’informatique en nuage (« cloud computing ») est aujourd’hui en
+Dans le cycle de vie des technologies émergentes, l’informative en nuage (« cloud computing ») est aujourd’hui en
 passe, du moins dans certaines de ses composantes, d’atteindre le « plateau de la productivité », caractéristique des
 technologies matures.
 
@@ -27,19 +34,30 @@ Des critères d’aide à la décision seront proposés afin de faciliter la com
 ### Statistique Utilisation Cloud
 ### Exemple d'utilisateur
 
+# Offres	
+## IaaS : Infrastucure as a Service	
+## Paas : Product as a Service
+## SaaS	: Software as a Service
+
 #Technologies
 ## VPS	
 ## Boite noire	
 ## Local	
 
-# Offres	
-## IaaS	
-## Paas	
-## SaaS	
+
+
+# Migration
+
 
 # Limites
 ##	Maitrise des données	
 ## Confidentialité	
-# Conclusion		
+# Conclusion
+
+# Annexe
+## Bibliographie
+
+
+
 
 
