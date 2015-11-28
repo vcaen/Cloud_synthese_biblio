@@ -2,7 +2,7 @@ Title         : Synthèse Bibliographique
 Author        : Léonard Allain-Launay & Vadim Caen 
 Logo          : True
 Document Class: [11pt]book
-Bib           : biblio/zotero/zotero
+Bib           : biblio/zotero/zotero.bib
 Toc Depth     : 10 
 
 
@@ -48,7 +48,7 @@ réseau et de calcul (processeurs) ou autre ressources numériques fondamentales
 l'utilisateur à la possibilité de déployer ou éxecuter des logiciels quelquonques, ce qui comprend des 
 systèmes d'exploitation et des applications. L'utilisateur ne gère pas ni ne contrôle l'infrastucture
 sous-jascente mais à le contrôle des systèmes d'exploitation, du stockage et des applications déployées ;
-et éventuellement un contrôle limité sur les composant réseau (i.e pare-feu) 
+et éventuellement un contrôle limité sur les composant réseau (i.e pare-feu) [@nist_definition]
 ## Paas : Product as a Service
 ## SaaS	: Software as a Service
 
