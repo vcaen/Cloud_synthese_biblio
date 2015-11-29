@@ -6,64 +6,68 @@ Bib           : biblio/zotero/zotero.bib
 Toc Depth     : 10 
 
 
-
-
-
 [TITLE]
 
 [TOC]
 
-
 # Rappel du sujet
-Dans le cycle de vie des technologies émergentes, l’informative en nuage (« cloud computing ») est aujourd’hui en
-passe, du moins dans certaines de ses composantes, d’atteindre le « plateau de la productivité », caractéristique des
+Dans le cycle de vie des technologies émergentes, l’informative en nuage («
+cloud computing ») est aujourd’hui en passe, du moins dans certaines de ses
+composantes, d’atteindre le « plateau de la productivité », caractéristique des
 technologies matures.
 
-L’objet de ce projet est ainsi de dresser un panorama des principales offres présentes sur le marché, des services
-offerts (services de monitoring/surveillance, de migration d’application, de gestion de plateforme...), des coûts respectifs
-des différentes offres, des principales technologies mises en œuvre.
+L’objet de ce projet est ainsi de dresser un panorama des principales offres
+présentes sur le marché, des services offerts (services de
+monitoring/surveillance, de migration d’application, de gestion de
+plateforme...), des coûts respectifs des différentes offres, des principales
+technologies mises en œuvre.
 
-On se placera, afin de réduire le spectre de l’étude selon trois points de vue client : une entreprise souhaitant faire
-héberger son courriel sur le cloud (SaaS : Software as a Service), une entreprise souhaitant lancer un site de ecommerce de portée européenne (PaaS : Platform as a Service), enfin une entreprise souhaitant migrer (presque) tout
-son SI dans le cloud (IaaS : Infrastructure as a Service).
+On se placera, afin de réduire le spectre de l’étude selon trois points de vue
+client : une entreprise souhaitant faire héberger son courriel sur le cloud
+(SaaS : Software as a Service), une entreprise souhaitant lancer un site de
+e-commerce de portée européenne (PaaS : Platform as a Service), enfin une
+entreprise souhaitant migrer (presque) tout son SI dans le cloud (IaaS :
+Infrastructure as a Service).
 
 Des critères d’aide à la décision seront proposés afin de faciliter la comparaison des offres étudiées.
 
 #Introduction
 ##	Qu'est ce que le Cloud ?	
-D'après le NIST (National Institute of Standards and Technology), le cloud est défini comme suit : 
- "Le cloud computing est un model permettant un accès confortable, à la demande et omniprésent à un
-  ensemble de ressources numériques (i.e, réseaux, serveurs, stockage, applications et services) qui peuvent être provisionnés
-  et publiés avec un effort minimal de gestion ou d'interaction avec le fournisseur de service."
+D'après le NIST (National Institute of Standards and Technology), le cloud est
+défini comme suit : "Le cloud computing est un model permettant un accès
+confortable, à la demande et omniprésent à un ensemble de ressources
+numériques (i.e, réseaux, serveurs, stockage, applications et services) qui
+peuvent être provisionnés et publiés avec un effort minimal de gestion ou
+d'interaction avec le fournisseur de service."
 
 ##L'état de l'art	
 ### Statistique Utilisation Cloud
 ### Exemple d'utilisateur
 
 # Offres	
-## IaaS : Infrastucure as a Service	
-### Definition
-Un cloud IaaS est défini par la mise à disposition du client de ressources des stockage,
-réseau et de calcul (processeurs) ou autre ressources numériques fondamentales dans lesquelles
-l'utilisateur à la possibilité de déployer ou éxecuter des logiciels quelquonques, ce qui comprend des 
-systèmes d'exploitation et des applications. L'utilisateur ne gère pas ni ne contrôle l'infrastucture
-sous-jascente mais à le contrôle des systèmes d'exploitation, du stockage et des applications déployées ;
-et éventuellement un contrôle limité sur les composant réseau (i.e pare-feu) [@nist_definition]
+## IaaS : Infrastructure as a Service	
+### Définition
+Un cloud IaaS est défini par la mise à disposition du client de ressources des
+stockage, réseau et de calcul (processeurs) ou autre ressources numériques
+fondamentales dans lesquelles l'utilisateur à la possibilité de déployer ou
+exécuter des logiciels quelconques, ce qui comprend des systèmes d'exploitation
+et des applications. L'utilisateur ne gère pas ni ne contrôle l’infrastructure
+sous-jacente mais à le contrôle des systèmes d'exploitation, du stockage et des
+applications déployées ; et éventuellement un contrôle limité sur les composant
+réseau (i.e pare-feu) [@nist_definition]
 ## Paas : Product as a Service
+### Définition
+La possibilité donnée à l'utilisateur de déployer des applications créées à partir de langages, bibliothèques, services et outils supportés par le fournisseur. L'utilisateur ne gère pas ni ne contrôle l'infrastructure sous-jacente, y compris le réseau, les serveurs, les systèmes d'exploitation ou le stockage, mais a le contrôle sur les applications déployées et éventuellement la possibilité de configurer l'environnement d'hébergement des applications.
 ## SaaS	: Software as a Service
 
 #Technologies
 ## VPS	
 ## Boite noire	
 ## Local	
-
-
-
 # Migration
 
-
 # Limites
-##	Maitrise des données	
+## Maîtrise des données	
 ## Confidentialité	
 # Conclusion
 
