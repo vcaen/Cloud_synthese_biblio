@@ -4,6 +4,8 @@ Logo          : True
 Document Class: [11pt]book
 Bib           : biblio/zotero/zotero.bib
 Toc Depth     : 10 
+Logo          : False
+Cite Style    : natural
 
 
 [TITLE]
@@ -57,8 +59,10 @@ applications déployées ; et éventuellement un contrôle limité sur les compo
 réseau (i.e pare-feu) [@nist_definition]
 ## Paas : Product as a Service
 ### Définition
-La possibilité donnée à l'utilisateur de déployer des applications créées à partir de langages, bibliothèques, services et outils supportés par le fournisseur. L'utilisateur ne gère pas ni ne contrôle l'infrastructure sous-jacente, y compris le réseau, les serveurs, les systèmes d'exploitation ou le stockage, mais a le contrôle sur les applications déployées et éventuellement la possibilité de configurer l'environnement d'hébergement des applications.
+La possibilité donnée à l'utilisateur de déployer des applications créées à partir de langages, bibliothèques, services et outils supportés par le fournisseur. L'utilisateur ne gère pas ni ne contrôle l'infrastructure sous-jacente, y compris le réseau, les serveurs, les systèmes d'exploitation ou le stockage, mais a le contrôle sur les applications déployées et éventuellement la possibilité de configurer l'environnement d'hébergement des applications. [@nist_definition]
 ## SaaS	: Software as a Service
+### Définition
+La possibilité donnée à l'utilisateur d'utilisé les applications du fournisseur s'exécutant sur une infrastructure cloud. Les applications sont accessible depuis divers appareil par le biais d'un client léger comme un navigateur internet ou un autre programme faisant l'interface. L'utilisateur n'a aucun contrôle sur l'infrastructure. Il peut cependant avoir un accès limité à des configuration spécifique à son utilisation. [@nist_definition]
 
 #Technologies
 ## VPS	
