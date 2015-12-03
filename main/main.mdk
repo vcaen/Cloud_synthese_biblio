@@ -49,8 +49,10 @@ moyenne européenne en terme du taux d'entrerpise utilisant le cloud pour ses ap
 utilisant des services du cloud contre une moyenne de 19% dans l'Union Européenne. La Finlande sort grande gagnante puisqu'elle comptabilise 51% 
 de taux d'utilisation du cloud par ses entreprises.
 
+~ Figure { #fig-use-stat-europ; caption: "Utilisation des services de cloud ( % des entreprises)"}
+![cloud_service_usage_in_europ] 
+~
 
-![cloud_service_usage_in_europ]
 
 [cloud_service_usage_in_europ]: images/cloud_service_usage_in_europ.png "Utilisation des services de cloud ( % des entreprises)" { width:auto; max-width:90% }
 
