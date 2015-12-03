@@ -44,6 +44,16 @@ d'interaction avec le fournisseur de service."
 
 ##L'état de l'art	
 ### Statistique Utilisation Cloud
+L'utilisation d'application dans le cloud est en constante augmentation. Cependant la France se situe encore en dessous de la
+moyenne européenne en terme du taux d'entrerpise utilisant le cloud pour ses applications. En effet, on compte environ 12% des entreprises françaises 
+utilisant des services du cloud contre une moyenne de 19% dans l'Union Européenne. La Finlande sort grande gagnante puisqu'elle comptabilise 51% 
+de taux d'utilisation du cloud par ses entreprises.
+
+
+![cloud_service_usage_in_europ]
+
+[cloud_service_usage_in_europ]: images/cloud_service_usage_in_europ.png "Utilisation des services de cloud ( % des entreprises)" { width:auto; max-width:90% }
+
 ### Exemple d'utilisateur
 
 # Offres	
