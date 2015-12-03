@@ -1,11 +1,6 @@
-Title         : Synthèse Bibliographique
-Author        : Léonard Allain-Launay & Vadim Caen 
-Logo          : True
-Document Class: [11pt]book
-Bib           : biblio/cloud
-Toc Depth     : 10 
-Logo          : False
-Cite Style    : numeric
+Title         : Synthèse Bibliographique Author        : Léonard Allain-Launay
+& Vadim Caen Logo          : True Document Class: [11pt]book Bib           :
+biblio/cloud Toc Depth     : 10 Logo          : False Cite Style    : numeric
 
 
 [TITLE]
@@ -33,30 +28,38 @@ e-commerce de portée européenne (PaaS : Platform as a Service), enfin une
 entreprise souhaitant migrer (presque) tout son SI dans le cloud (IaaS :
 Infrastructure as a Service).
 
-Des critères d’aide à la décision seront proposés afin de faciliter la comparaison des offres étudiées.
+Des critères d’aide à la décision seront proposés afin de faciliter la
+comparaison des offres étudiées.
 
 #Introduction
 ##	Qu'est ce que le Cloud ?	
 D'après le NIST (National Institute of Standards and Technology), le cloud est
 défini comme suit : "Le cloud computing est un model permettant un accès
-confortable, à la demande et omniprésent à un ensemble de ressources
-numériques (i.e, réseaux, serveurs, stockage, applications et services) qui
-peuvent être provisionnés et publiés avec un effort minimal de gestion ou
-d'interaction avec le fournisseur de service." [@national_institute_of_standards_and_technology_nist_2011]
+confortable, à la demande et omniprésent à un ensemble de ressources numériques
+(i.e, réseaux, serveurs, stockage, applications et services) qui peuvent être
+provisionnés et publiés avec un effort minimal de gestion ou d'interaction avec
+le fournisseur de service."
+[@national_institute_of_standards_and_technology_nist_2011]
 
 ##L'état de l'art	
 ### Statistique Utilisation Cloud
-L'utilisation d'application dans le cloud est en constante augmentation. Cependant la France se situe encore en dessous de la
-moyenne européenne en terme du taux d'entrerpise utilisant le cloud pour ses applications. En effet, on compte environ 12% des entreprises françaises 
-utilisant des services du cloud contre une moyenne de 19% dans l'Union Européenne. La Finlande sort grande gagnante puisqu'elle comptabilise 51% 
-de taux d'utilisation du cloud par ses entreprises.
+L'utilisation d'application dans le cloud est en constante augmentation.
+Cependant la France se situe encore en dessous de la moyenne européenne en
+terme du taux d'entrerpise utilisant le cloud pour ses applications. En effet,
+on compte environ 12% des entreprises françaises utilisant des services du
+cloud contre une moyenne de 19% dans l'Union Européenne. La Finlande sort
+grande gagnante puisqu'elle comptabilise 51% de taux d'utilisation du cloud par
+ses entreprises.
 
-~ Figure { #fig-use-stat-europ; caption: "Utilisation des services de cloud ( % des entreprises) @konstantinos_giannakouri_cloud_2014 "}
-![cloud_service_usage_in_europ] 
+~ Figure { #fig-use-stat-europ; caption: "Utilisation des services de cloud ( %
+des entreprises) @konstantinos_giannakouri_cloud_2014 "}
+![cloud_service_usage_in_europ]
 ~
 
 
-[cloud_service_usage_in_europ]: images/cloud_service_usage_in_europ.png "Utilisation des services de cloud ( % des entreprises)" { width:auto; max-width:90% }
+[cloud_service_usage_in_europ]: images/cloud_service_usage_in_europ.png
+"Utilisation des services de cloud ( % des entreprises)" { width:auto; max-
+width:90% }
 
 ### Exemple d'utilisateur
 
@@ -70,19 +73,52 @@ exécuter des logiciels quelconques, ce qui comprend des systèmes d'exploitatio
 et des applications. L'utilisateur ne gère pas ni ne contrôle l’infrastructure
 sous-jacente mais à le contrôle des systèmes d'exploitation, du stockage et des
 applications déployées ; et éventuellement un contrôle limité sur les composant
-réseau (i.e pare-feu) [@national_institute_of_standards_and_technology_nist_2011]
+réseau (i.e pare-feu)
+[@national_institute_of_standards_and_technology_nist_2011]
 ## Paas : Product as a Service
 ### Définition
-La possibilité donnée à l'utilisateur de déployer des applications créées à partir de langages, bibliothèques, services et outils supportés par le fournisseur. L'utilisateur ne gère pas ni ne contrôle l'infrastructure sous-jacente, y compris le réseau, les serveurs, les systèmes d'exploitation ou le stockage, mais a le contrôle sur les applications déployées et éventuellement la possibilité de configurer l'environnement d'hébergement des applications. [@national_institute_of_standards_and_technology_nist_2011]
+La possibilité donnée à l'utilisateur de déployer des applications créées à
+partir de langages, bibliothèques, services et outils supportés par le
+fournisseur. L'utilisateur ne gère pas ni ne contrôle l'infrastructure sous-
+jacente, y compris le réseau, les serveurs, les systèmes d'exploitation ou le
+stockage, mais a le contrôle sur les applications déployées et éventuellement
+la possibilité de configurer l'environnement d'hébergement des applications.
+[@national_institute_of_standards_and_technology_nist_2011]
+
+
 ## SaaS	: Software as a Service
 ### Introduction
-Dans le cadre de cette étude, nous allons nous placer du point de vue d'une entreprise souhaitant faire 
-héberger sont courriel dans le cloud. Nous allons étudier les différents fournisseurs majeurs que l'on peut 
-touver sur le marché, la confidentialité qu'ils promettent et les technologies qu'ils utilisent. Nous verrons
-aussi quels sont les prix qu'ils pratiquent.
+Dans le cadre de cette étude, nous allons nous placer du point de vue d'une
+entreprise souhaitant faire héberger sont courriel dans le cloud. Nous allons
+étudier les différents fournisseurs majeurs que l'on peut touver sur le marché,
+la confidentialité qu'ils promettent et les technologies qu'ils utilisent. Nous
+verrons aussi quels sont les prix qu'ils pratiquent.
+
 ### Définition
-Le SaaS est la possibilité donnée à l'utilisateur d'utilisé les applications du fournisseur s'exécutant sur une infrastructure cloud. Les applications sont accessible depuis divers appareil par le biais d'un client léger comme un navigateur internet ou un autre programme faisant l'interface. L'utilisateur n'a aucun contrôle sur l'infrastructure. Il peut cependant avoir un accès limité à des configuration spécifique à son utilisation. [@national_institute_of_standards_and_technology_nist_2011]
+Le SaaS est la possibilité donnée à l'utilisateur d'utilisé les applications du
+fournisseur s'exécutant sur une infrastructure cloud. Les applications sont
+accessible depuis divers appareil par le biais d'un client léger comme un
+navigateur internet ou un autre programme faisant l'interface. L'utilisateur
+n'a aucun contrôle sur l'infrastructure. Il peut cependant avoir un accès
+limité à des configuration spécifique à son utilisation.
+[@national_institute_of_standards_and_technology_nist_2011]
+
 ### Fournisseurs
+Voici une liste non exaustives des fournisseur de service mail dans le cloud :
+
+ * Google Apps
+ * Yahoo Zimbra
+ * PanTerra Networks
+ * Cisco WebEx Mail
+ * IBM LotusLive iNotes
+ * ElasticEmail
+ * Microsoft Exchange Online
+ * AppTix
+ * AppRiver
+
+
+RackSpace Email & Apps
+
 ### Migration
 ### Limites
 ### Maîtrise des données	
