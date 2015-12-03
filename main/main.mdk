@@ -5,12 +5,14 @@ Document Class: [11pt]book
 Bib           : biblio/cloud
 Toc Depth     : 10 
 Logo          : False
-Cite Style    : natural
+Cite Style    : numeric
 
 
 [TITLE]
 
 [TOC]
+
+&pagebreak;
 
 # Rappel du sujet
 Dans le cycle de vie des technologies émergentes, l’informative en nuage («
@@ -40,7 +42,7 @@ défini comme suit : "Le cloud computing est un model permettant un accès
 confortable, à la demande et omniprésent à un ensemble de ressources
 numériques (i.e, réseaux, serveurs, stockage, applications et services) qui
 peuvent être provisionnés et publiés avec un effort minimal de gestion ou
-d'interaction avec le fournisseur de service."
+d'interaction avec le fournisseur de service." [@national_institute_of_standards_and_technology_nist_2011]
 
 ##L'état de l'art	
 ### Statistique Utilisation Cloud
@@ -49,7 +51,7 @@ moyenne européenne en terme du taux d'entrerpise utilisant le cloud pour ses ap
 utilisant des services du cloud contre une moyenne de 19% dans l'Union Européenne. La Finlande sort grande gagnante puisqu'elle comptabilise 51% 
 de taux d'utilisation du cloud par ses entreprises.
 
-~ Figure { #fig-use-stat-europ; caption: "Utilisation des services de cloud ( % des entreprises)"}
+~ Figure { #fig-use-stat-europ; caption: "Utilisation des services de cloud ( % des entreprises) @konstantinos_giannakouri_cloud_2014 "}
 ![cloud_service_usage_in_europ] 
 ~
 
@@ -73,15 +75,21 @@ réseau (i.e pare-feu) [@national_institute_of_standards_and_technology_nist_201
 ### Définition
 La possibilité donnée à l'utilisateur de déployer des applications créées à partir de langages, bibliothèques, services et outils supportés par le fournisseur. L'utilisateur ne gère pas ni ne contrôle l'infrastructure sous-jacente, y compris le réseau, les serveurs, les systèmes d'exploitation ou le stockage, mais a le contrôle sur les applications déployées et éventuellement la possibilité de configurer l'environnement d'hébergement des applications. [@national_institute_of_standards_and_technology_nist_2011]
 ## SaaS	: Software as a Service
+### Introduction
+Dans le cadre de cette étude, nous allons nous placer du point de vue d'une entreprise souhaitant faire 
+héberger sont courriel dans le cloud. Nous allons étudier les différents fournisseurs majeurs que l'on peut 
+touver sur le marché, la confidentialité qu'ils promettent et les technologies qu'ils utilisent. Nous verrons
+aussi quels sont les prix qu'ils pratiquent.
 ### Définition
-La possibilité donnée à l'utilisateur d'utilisé les applications du fournisseur s'exécutant sur une infrastructure cloud. Les applications sont accessible depuis divers appareil par le biais d'un client léger comme un navigateur internet ou un autre programme faisant l'interface. L'utilisateur n'a aucun contrôle sur l'infrastructure. Il peut cependant avoir un accès limité à des configuration spécifique à son utilisation. [@national_institute_of_standards_and_technology_nist_2011]
+Le SaaS est la possibilité donnée à l'utilisateur d'utilisé les applications du fournisseur s'exécutant sur une infrastructure cloud. Les applications sont accessible depuis divers appareil par le biais d'un client léger comme un navigateur internet ou un autre programme faisant l'interface. L'utilisateur n'a aucun contrôle sur l'infrastructure. Il peut cependant avoir un accès limité à des configuration spécifique à son utilisation. [@national_institute_of_standards_and_technology_nist_2011]
+### Fournisseurs
+### Migration
+### Limites
+### Maîtrise des données	
+### Confidentialité
 
 #Technologies
-## VPS	
-## Boite noire	
-## Local	
 # Migration
-
 # Limites
 ## Maîtrise des données	
 ## Confidentialité	
