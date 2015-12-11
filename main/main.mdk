@@ -119,7 +119,43 @@ Voici une liste non exaustives des fournisseur de service mail dans le cloud [@c
  * AppRiver
  * RackSpace Email & Apps
 
+Pour l'étude plus approfondies, 
+nous allons nous limiter à deux acteurs majeurs, Google et Microsoft, et une solution open source : Zimbra
+
+#### Google Apps
+![google_apps_logo]
+
+Google Apps for Work, est une plateforme de communication basée sur le cloud qui permet une collaboration en 
+en temps réel sur plusieurs appareils en même temps. 
+
+La plateforme est hébergée de façon ditribuée sur toute la planète, ce qui assure une sécurité pour la sauvegarde 
+des données et un accès rapide peut importe la localisation de l'utilisateur.
+
+Les services que la plateforme propose sont nombreux, mais nous allons nous concentrer sur l'application Gmail qui
+permet de retrouver toutes les fonctionnalités offertes au grand public sur la version gratuite de Gmail mais en permettant à 
+l'entrepise de personnaliser son interface avec par exemple son propore logo et surtout de pouvoir envoyer et
+recevoir de mail via son propre nom de domaine.
+
+~ Figure { #fig-use-stat-europ; caption: "Example d'interface de Gmail for work"}
+![gmail_screenshot]
+~
+
+
+[gmail_screenshot]: images/gmail_screenshot.png "Example d'interface de Gmail for work" { width:auto; max-width:90% }
+
+
+
+[google_apps_logo]: images/google_apps_logo.PNG "google_apps_logo" { width:auto; max-width:33%; float: right; margin: 15px }
+
+
 ### Migration
+
+Généralement, une entreprise dispose d'un serveur de mail *SMPT* et *IMAP/POP* pour envoyer et recevoir des mails.
+L'adresse ip de ces serveurs est référencée par des entrées de type *MX* sur un serveur *DNS*.
+
+Google Apps, pour assurer une migration facile d'un serveur de mail classique vers son SaaS Gmail propose de simplement
+changer les entrées *MX* des serveurs DNS en redirigeant les requêtes de mail vers ses propres serveurs. Google
+se charge ensuite de mettre à disposition les mails envoyés et reçus par l'entrerpise dans une interface web
 ### Limites
 ### Maîtrise des données	
 ### Confidentialité
