@@ -1,6 +1,11 @@
-Title         : Synthèse Bibliographique Author        : Léonard Allain-Launay
-& Vadim Caen Logo          : True Document Class: [11pt]book Bib           :
-biblio/cloud Toc Depth     : 10 Logo          : False Cite Style    : numeric
+Title         : Synthèse Bibliographique
+Author        : Léonard Allain-Launay & Vadim Caen 
+Logo          : True
+Document Class: [11pt]book
+Bib           : biblio/cloud
+Toc Depth     : 10 
+Logo          : False
+Cite Style    : numeric
 
 
 [TITLE]
@@ -51,15 +56,12 @@ cloud contre une moyenne de 19% dans l'Union Européenne. La Finlande sort
 grande gagnante puisqu'elle comptabilise 51% de taux d'utilisation du cloud par
 ses entreprises.
 
-~ Figure { #fig-use-stat-europ; caption: "Utilisation des services de cloud ( %
-des entreprises) @konstantinos_giannakouri_cloud_2014 "}
+~ Figure { #fig-use-stat-europ; caption: "Utilisation des services de cloud ( %des entreprises) @konstantinos_giannakouri_cloud_2014 "}
 ![cloud_service_usage_in_europ]
 ~
 
 
-[cloud_service_usage_in_europ]: images/cloud_service_usage_in_europ.png
-"Utilisation des services de cloud ( % des entreprises)" { width:auto; max-
-width:90% }
+[cloud_service_usage_in_europ]: images/cloud_service_usage_in_europ.png "Utilisation des services de cloud ( % des entreprises)" { width:auto; max-width:90% }
 
 ### Exemple d'utilisateur
 
@@ -104,7 +106,7 @@ limité à des configuration spécifique à son utilisation.
 [@national_institute_of_standards_and_technology_nist_2011]
 
 ### Fournisseurs
-Voici une liste non exaustives des fournisseur de service mail dans le cloud :
+Voici une liste non exaustives des fournisseur de service mail dans le cloud [@cloudtweaks_top_2010] :
 
  * Google Apps
  * Yahoo Zimbra
@@ -115,9 +117,7 @@ Voici une liste non exaustives des fournisseur de service mail dans le cloud :
  * Microsoft Exchange Online
  * AppTix
  * AppRiver
-
-
-RackSpace Email & Apps
+ * RackSpace Email & Apps
 
 ### Migration
 ### Limites
