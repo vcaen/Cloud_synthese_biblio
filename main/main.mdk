@@ -134,7 +134,7 @@ des données et un accès rapide peut importe la localisation de l'utilisateur.
 Les services que la plateforme propose sont nombreux, mais nous allons nous concentrer sur l'application Gmail qui
 permet de retrouver toutes les fonctionnalités offertes au grand public sur la version gratuite de Gmail mais en permettant à 
 l'entrepise de personnaliser son interface avec par exemple son propore logo et surtout de pouvoir envoyer et
-recevoir de mail via son propre nom de domaine.
+recevoir de mail via son propre nom de domaine. [@cloud_technology_alliance_business_2015]
 
 ~ Figure { #fig-use-stat-europ; caption: "Example d'interface de Gmail for work"}
 ![gmail_screenshot]
@@ -155,7 +155,7 @@ L'adresse ip de ces serveurs est référencée par des entrées de type *MX* sur
 
 Google Apps, pour assurer une migration facile d'un serveur de mail classique vers son SaaS Gmail propose de simplement
 changer les entrées *MX* des serveurs DNS en redirigeant les requêtes de mail vers ses propres serveurs. Google
-se charge ensuite de mettre à disposition les mails envoyés et reçus par l'entrerpise dans une interface web
+se charge ensuite de mettre à disposition les mails envoyés et reçus par l'entrerpise dans une interface web [@google_centre_2015]
 ### Limites
 ### Maîtrise des données	
 ### Confidentialité
