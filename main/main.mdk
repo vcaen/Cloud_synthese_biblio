@@ -153,18 +153,32 @@ Google Apps, pour assurer une migration facile d'un serveur de mail classique ve
 changer les entrées *MX* des serveurs DNS en redirigeant les requêtes de mail vers ses propres serveurs. Google
 se charge ensuite de mettre à disposition les mails envoyés et reçus par l'entrerpise dans une interface web [@google_centre_2015]
 
-## Sécurité [^secu] des données
+## Sécurité des données
 
-Google dispose de plusieurs protocoles assurant la sécurité des données de ses utilisteur.
+Google assure la sécurité des données de ses utilisateurs autant sur le plan virutel que physique. 
+L'entreprise souligne d'ailleurs : 
+
+* *La base de l'engagement de Google concernant la sécurité est son propre ensemble de politiques de sécurité qui couvre les services
+physiques, les comptes, les services d'entreprise, le réseau, les systèmes d'information, les services d'applications, 
+les services systèmes, la gestion des changement, la réponse aux incident et la sécurité des data centers* (traduction)[@google_security_2012]
 
 Afin de pallier à une éventuelle attaque venue de l'extérieur, Google dispose d'une équipe disponible vingt-quatre heures sur 
 vingt-quatre et sept jours sur sept. Cette équipe s'occupe de monitorer les services Google et de répondre à toute tentative de cyber attaque.
 De plus, pour éviter toute intrusion physique dans le système, une équipe de sécurité (vigiles) est présente dans toutes ses infrastructures.
 [@google_security_2012]
 
-[^secu]: La sécurité des données fait référence 
-  à leur intégrité physique sur les serveur ainsi qu'à la sécurité contre des 
-  attaques venues d'un acteur externe.
+Sur le plan de la résitance aux dysfonctionnement, Google utilise son propre système de fichier avec un stockage distrbué et anonymisé. 
+La structure du système de fichier est conservée sur une base de donnée ditribuée. Ainsi, Google assure que les données des ces utilisateurs
+seront toujours disponibles en cas de panne.[@google_security_2012]
+
+~ Figure { #fig-gapps-archit; caption: "Environnement distribué de Google Apps"}
+![google_apps_server_architecture]
+~
+
+
+[google_apps_server_architecture]: images/google_apps_server_architecture.PNG "Example d'interface de Gmail for work" { width:auto; max-width:90% }
+
+
 
 ## Confidentialité
 
