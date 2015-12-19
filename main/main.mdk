@@ -67,23 +67,23 @@ ses entreprises.
 # Offres	
 ## IaaS : Infrastructure as a Service	
 ### Définition
-Un cloud IaaS est défini par la mise à disposition du client de ressources des
+*Un cloud IaaS est défini par la mise à disposition du client de ressources des
 stockage, réseau et de calcul (processeurs) ou autre ressources numériques
 fondamentales dans lesquelles l'utilisateur à la possibilité de déployer ou
 exécuter des logiciels quelconques, ce qui comprend des systèmes d'exploitation
 et des applications. L'utilisateur ne gère pas ni ne contrôle l’infrastructure
 sous-jacente mais à le contrôle des systèmes d'exploitation, du stockage et des
 applications déployées ; et éventuellement un contrôle limité sur les composant
-réseau (i.e pare-feu)
+réseau (i.e pare-feu)*
 [@national_institute_of_standards_and_technology_nist_2011]
 ## Paas : Product as a Service
 ### Définition
-La possibilité donnée à l'utilisateur de déployer des applications créées à
+*La possibilité donnée à l'utilisateur de déployer des applications créées à
 partir de langages, bibliothèques, services et outils supportés par le
 fournisseur. L'utilisateur ne gère pas ni ne contrôle l'infrastructure sous-
 jacente, y compris le réseau, les serveurs, les systèmes d'exploitation ou le
 stockage, mais a le contrôle sur les applications déployées et éventuellement
-la possibilité de configurer l'environnement d'hébergement des applications.
+la possibilité de configurer l'environnement d'hébergement des applications.*
 [@national_institute_of_standards_and_technology_nist_2011]
 
 
@@ -96,16 +96,19 @@ la confidentialité qu'ils promettent et les technologies qu'ils utilisent. Nous
 verrons aussi quels sont les prix qu'ils pratiquent.
 
 ### Définition
-Le SaaS est la possibilité donnée à l'utilisateur d'utilisé les applications du
+*Le SaaS est la possibilité donnée à l'utilisateur d'utilisé les applications du
 fournisseur s'exécutant sur une infrastructure cloud. Les applications sont
 accessible depuis divers appareil par le biais d'un client léger comme un
 navigateur internet ou un autre programme faisant l'interface. L'utilisateur
 n'a aucun contrôle sur l'infrastructure. Il peut cependant avoir un accès
-limité à des configuration spécifique à son utilisation.
+limité à des configuration spécifique à son utilisation.*
 [@national_institute_of_standards_and_technology_nist_2011]
 
+Google rajoute qu'un cloud est caractérisé par un service redondant et une allocation de ressources dynamique qui 
+permet un partage des ressouces CPU et de mémoire entre les utilisateur tout en assurant la sécurité du système [@]
+
 ### Fournisseurs
-Voici une liste non exaustives des fournisseur de service mail dans le cloud [@cloudtweaks_top_2010] :
+Voici une liste non exaustives des fournisseurs de service mail dans le cloud [@cloudtweaks_top_2010] :
 
  * Google Apps
  * Yahoo Zimbra
@@ -119,16 +122,16 @@ Voici une liste non exaustives des fournisseur de service mail dans le cloud [@c
  * RackSpace Email & Apps
 
 Pour l'étude plus approfondies, 
-nous allons nous limiter à deux acteurs majeurs, Google et Microsoft, et une solution open source : Zimbra
+nous allons nous limiter à deux acteurs majeurs, Google et Microsoft.
 
 #### Google Apps
 ![google_apps_logo]
 
 Google Apps for Work, est une plateforme de communication basée sur le cloud qui permet une collaboration en 
-en temps réel sur plusieurs appareils en même temps. 
+en temps réel sur plusieurs appareils en même temps. [@cloud_technology_alliance_business_2015]
 
 La plateforme est hébergée de façon ditribuée sur toute la planète, ce qui assure une sécurité pour la sauvegarde 
-des données et un accès rapide peut importe la localisation de l'utilisateur.
+des données et un accès rapide peut importe la localisation de l'utilisateur.[@cloud_technology_alliance_business_2015]
 
 Les services que la plateforme propose sont nombreux, mais nous allons nous concentrer sur l'application Gmail qui
 permet de retrouver toutes les fonctionnalités offertes au grand public sur la version gratuite de Gmail mais en permettant à 
@@ -148,10 +151,6 @@ recevoir de mail via son propre nom de domaine. [@cloud_technology_alliance_busi
 
 
 ### Migration
-
-Généralement, une entreprise dispose d'un serveur de mail *SMPT* et *IMAP/POP* pour envoyer et recevoir des mails.
-L'adresse ip de ces serveurs est référencée par des entrées de type *MX* sur un serveur *DNS*.
-
 Google Apps, pour assurer une migration facile d'un serveur de mail classique vers son SaaS Gmail propose de simplement
 changer les entrées *MX* des serveurs DNS en redirigeant les requêtes de mail vers ses propres serveurs. Google
 se charge ensuite de mettre à disposition les mails envoyés et reçus par l'entrerpise dans une interface web [@google_centre_2015]
