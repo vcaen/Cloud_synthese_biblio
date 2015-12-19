@@ -1,8 +1,7 @@
 Title         : Synthèse Bibliographique
 Author        : Léonard Allain-Launay & Vadim Caen 
-Logo          : True
-Document Class: [11pt]book
-Bib           : biblio/cloud
+Document Class: [11pt]article
+
 Toc Depth     : 10 
 Logo          : False
 Cite Style    : numeric
