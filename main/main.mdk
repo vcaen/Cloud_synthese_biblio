@@ -1,7 +1,7 @@
 Title         : Synthèse Bibliographique
 Author        : Léonard Allain-Launay & Vadim Caen 
 Document Class: [11pt]article
-
+Bib           : biblio/cloud.bib
 Toc Depth     : 10 
 Logo          : False
 Cite Style    : numeric
@@ -64,9 +64,9 @@ ses entreprises.
 
 ### Exemple d'utilisateur
 
-# Offres	
-## IaaS : Infrastructure as a Service	
-### Définition
+
+# IaaS : Infrastructure as a Service	
+## Définition
 *Un cloud IaaS est défini par la mise à disposition du client de ressources des
 stockage, réseau et de calcul (processeurs) ou autre ressources numériques
 fondamentales dans lesquelles l'utilisateur à la possibilité de déployer ou
@@ -86,16 +86,16 @@ stockage, mais a le contrôle sur les applications déployées et éventuellemen
 la possibilité de configurer l'environnement d'hébergement des applications.*
 [@national_institute_of_standards_and_technology_nist_2011]
 
-
-## SaaS	: Software as a Service
-### Introduction
+&pagebreak;
+# SaaS	: Software as a Service
+## Introduction
 Dans le cadre de cette étude, nous allons nous placer du point de vue d'une
 entreprise souhaitant faire héberger sont courriel dans le cloud. Nous allons
 étudier les différents fournisseurs majeurs que l'on peut touver sur le marché,
 la confidentialité qu'ils promettent et les technologies qu'ils utilisent. Nous
 verrons aussi quels sont les prix qu'ils pratiquent.
 
-### Définition
+## Définition
 *Le SaaS est la possibilité donnée à l'utilisateur d'utilisé les applications du
 fournisseur s'exécutant sur une infrastructure cloud. Les applications sont
 accessible depuis divers appareil par le biais d'un client léger comme un
@@ -105,9 +105,9 @@ limité à des configuration spécifique à son utilisation.*
 [@national_institute_of_standards_and_technology_nist_2011]
 
 Google rajoute qu'un cloud est caractérisé par un service redondant et une allocation de ressources dynamique qui 
-permet un partage des ressouces CPU et de mémoire entre les utilisateur tout en assurant la sécurité du système [@]
+permet un partage des ressouces CPU et de mémoire entre les utilisateur tout en assurant la sécurité du système [@google_security_2012]
 
-### Fournisseurs
+## Fournisseurs
 Voici une liste non exaustives des fournisseurs de service mail dans le cloud [@cloudtweaks_top_2010] :
 
  * Google Apps
@@ -124,7 +124,7 @@ Voici une liste non exaustives des fournisseurs de service mail dans le cloud [@
 Pour l'étude plus approfondies, 
 nous allons nous limiter à deux acteurs majeurs, Google et Microsoft.
 
-#### Google Apps
+### Google Apps
 ![google_apps_logo]
 
 Google Apps for Work, est une plateforme de communication basée sur le cloud qui permet une collaboration en 
@@ -132,6 +132,7 @@ en temps réel sur plusieurs appareils en même temps. [@cloud_technology_allian
 
 La plateforme est hébergée de façon ditribuée sur toute la planète, ce qui assure une sécurité pour la sauvegarde 
 des données et un accès rapide peut importe la localisation de l'utilisateur.[@cloud_technology_alliance_business_2015]
+
 
 Les services que la plateforme propose sont nombreux, mais nous allons nous concentrer sur l'application Gmail qui
 permet de retrouver toutes les fonctionnalités offertes au grand public sur la version gratuite de Gmail mais en permettant à 
@@ -144,25 +145,32 @@ recevoir de mail via son propre nom de domaine. [@cloud_technology_alliance_busi
 
 
 [gmail_screenshot]: images/gmail_screenshot.png "Example d'interface de Gmail for work" { width:auto; max-width:90% }
-
-
-
 [google_apps_logo]: images/google_apps_logo.PNG "google_apps_logo" { width:auto; max-width:33%; float: right; margin: 15px }
 
 
-### Migration
+## Migration
 Google Apps, pour assurer une migration facile d'un serveur de mail classique vers son SaaS Gmail propose de simplement
 changer les entrées *MX* des serveurs DNS en redirigeant les requêtes de mail vers ses propres serveurs. Google
 se charge ensuite de mettre à disposition les mails envoyés et reçus par l'entrerpise dans une interface web [@google_centre_2015]
-### Limites
-### Maîtrise des données	
-### Confidentialité
 
-#Technologies
-# Migration
-# Limites
-## Maîtrise des données	
-## Confidentialité	
+## Sécurité [^secu] des données
+
+Google dispose de plusieurs protocoles assurant la sécurité des données de ses utilisteur.
+
+Afin de pallier à une éventuelle attaque venue de l'extérieur, Google dispose d'une équipe disponible vingt-quatre heures sur 
+vingt-quatre et sept jours sur sept. Cette équipe s'occupe de monitorer les services Google et de répondre à toute tentative de cyber attaque.
+De plus, pour éviter toute intrusion physique dans le système, une équipe de sécurité (vigiles) est présente dans toutes ses infrastructures.
+[@google_security_2012]
+
+[^secu]: La sécurité des données fait référence 
+  à leur intégrité physique sur les serveur ainsi qu'à la sécurité contre des 
+  attaques venues d'un acteur externe.
+
+## Confidentialité
+
+##Technologies
+
+	
 # Conclusion
 
 # Annexe
