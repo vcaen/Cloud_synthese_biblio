@@ -1,7 +1,7 @@
 Title         : Synthèse Bibliographique
 Author        : Léonard Allain-Launay & Vadim Caen 
 Document Class: [11pt]article
-Bib           : biblio/cloud.bib
+Bib           : biblio/cloud
 Toc Depth     : 10 
 Logo          : False
 Cite Style    : numeric
@@ -124,7 +124,9 @@ Voici une liste non exaustives des fournisseurs de service mail dans le cloud [@
 Pour l'étude plus approfondies, 
 nous allons nous limiter à deux acteurs majeurs, Google et Microsoft.
 
-### Google Apps
+## Google Apps
+
+### Description du service
 ![google_apps_logo]
 
 Google Apps for Work, est une plateforme de communication basée sur le cloud qui permet une collaboration en 
@@ -148,12 +150,12 @@ recevoir de mail via son propre nom de domaine. [@cloud_technology_alliance_busi
 [google_apps_logo]: images/google_apps_logo.PNG "google_apps_logo" { width:auto; max-width:33%; float: right; margin: 15px }
 
 
-## Migration
+### Migration
 Google Apps, pour assurer une migration facile d'un serveur de mail classique vers son SaaS Gmail propose de simplement
 changer les entrées *MX* des serveurs DNS en redirigeant les requêtes de mail vers ses propres serveurs. Google
 se charge ensuite de mettre à disposition les mails envoyés et reçus par l'entrerpise dans une interface web [@google_centre_2015]
 
-## Sécurité des données
+### Sécurité des données
 
 Google assure la sécurité des données de ses utilisateurs autant sur le plan virutel que physique. 
 L'entreprise souligne d'ailleurs : 
@@ -180,12 +182,36 @@ seront toujours disponibles en cas de panne.[@google_security_2012]
 
 
 
-## Confidentialité
+### Confidentialité
 
-##Technologies
+###Technologies
+
+## Comparaison des offres et de prix
+
+Toutes les offre présentées en figure [#fig-email-price] facture leur service en fonction du nombre d'utilisateur.
+Au niveau des fonctionalités offertes, on constate qu'elle sont à peu près équivalente. Google ne propose pas de synchrinisation
+avec Microsoft Outlook, Contact et Calendar car ça ferait concurrence à ses propres services inclus dans l'offre Google Apps [@google_google_2015]
+
+~ Figure { #fig-email-price; caption:"Comparaison des prix et des offres. [@matt_hicks_email_2013]"; width:100%}
+![mail_cloud_price_comparaison]
+
+~
+
+
+
+[mail_cloud_price_comparaison]: images/mail_cloud_price_comparaison.PNG "mail_cloud_price_comparaison" { width:auto; max-width:90% }
+
+
 
 	
 # Conclusion
+
+Le choix d'un service de mail dans le cloud reste assez limité et seuls Google et Microsoft se démarquent vraiment du lot.
+En terme de fonctionnalités, les offres sont semblable et la décision devrait plutôt se faire sur l'environnement offert
+en plus du service de mail. Une entreprise utilisant déjà la suite Microsoft Office pourrait vouloir rester dans un écosystème 
+Microsoft en souscrivant à Office 365. Cependant, Google offre les même services avec Google Apps for Work, incluant aussi une
+suite d'édition de documents qui selon nous n'est tout de même pas à la hauteur de la suite office. On appréciera chez google la 
+puissance de son moteur de recherche intégré à sa boite mail [@cloud_technology_alliance_business_2015].
 
 # Annexe
 ## Bibliographie
