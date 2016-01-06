@@ -66,7 +66,7 @@ ses entreprises.
 
 
 # IaaS : Infrastructure as a Service	
-### Introduction
+## Introduction
 Le périmètre de cette étude se limite au cas d'une entreprise désirant migrer
 l'intégralité de son SI dans le cloud. Pour rappel, Un système d'information (SI)
 est *un ensemble organisé de ressources qui permet de collecter, stocker, traiter 
@@ -91,7 +91,7 @@ applications déployées ; et éventuellement un contrôle limité sur les compo
 réseau (i.e pare-feu)*
 [@national_institute_of_standards_and_technology_nist_2011]
 
-### Technologies
+## Technologies
 La mise à disposition de ressources cloud se base généralement sur des technologies 
 de virtualisation, permettant *l'utilisation d'un matériel par plusieurs utilisateurs* [@rackspace.cloud_computing].
 Des suites comme OpenStack [^openstack] permettent la gestion de large parcs de matériel et des différentes machines virtuelles qui y évoluent, notamment en instanciant dynamiquement des VMs, et en utilisant des réseaux d'hyperviseurs tels que vSphere Hypervisor (vmware) [^vsphere], KVM ou Hyper-V.
@@ -106,7 +106,7 @@ Des suites comme OpenStack [^openstack] permettent la gestion de large parcs de 
 [hyperviseur-type-1]: images/hyperviseur-type-1.png "hyperviseur-type-1" { width:auto; max-width:90% }
 
 
-### Compétences
+## Compétences
 Même si la maintenance matérielle, la gestion de la virtualisation, du stockage
 et des systèmes d'exploitation sont assurées par le fournisseur de l'offre IaaS,
 un grand nombre de compétences doivent rester dans l'entreprise afin d'assurer 
@@ -126,13 +126,13 @@ client de s'abstraire de toute une couche de compétences matérielles, mais le
 client devra s'employer à toutes les opérations ayant trait à la couche logicielle,
 contrairement aux cas des offres SaaS décrites plus bas.
 
-### Confidentialité et Maîtrise des données
+## Confidentialité et Maîtrise des données
 Si la plupart des fournisseurs de service IaaS garantissent la disponibilité et l'intégrité physique de leurs serveurs, la gestion des contenus sur la machine louée revient à la charge du client, qui doit mettre en place les dispositifs d'authentication, d'encryption qu'il juge nécessaire au bon fonctionnement et à l'intégrité de ses données.
 A mi-chemin entre ces deux positions, certains fournisseurs d'offres IaaS proposent la mise à disposition de Firewalls, ou de technologies contre les attaques de type DDoS [@ovh_anti_ddos_]. Certaines entreprises, comme FortyCloud[^fortycloud], sont même spécialisées dans des modules de sécurité comme des Firewalls à ajouter en sur-couche des principaux fournisseurs cloud.
 
 [^fortycloud]: <http://fortycloud.com/>
 
-### Fournisseurs
+## Fournisseurs
 Liste non exhaustive des principaux fournisseurs de solutions IaaS [@_iaas_2014] :
 
 * Amazon EC2
@@ -141,15 +141,27 @@ Liste non exhaustive des principaux fournisseurs de solutions IaaS [@_iaas_2014]
 * Rackspace Open Cloud
 * IBM SmartCloud Enterprise
 * OVH
+* DigitalOcean
 
 Nous limiterons ici l'étude à Amazon EC2 et OVH.
 
 ### Amazon EC2
+Nous avons choisi d'étudier plus en détail l'infrastructure EC2 d'Amazon Webservice, Amazon étant à la fois un pionnier historique des offres cloud [@computerweekly_history], mais également loin devant ses principaux concurrents en terme de parts de marché, toutes offres confondues [@synergy.market_shares]. Amazon propose une multitude d'offres cloud différentes [@aws_plainenglish], EC2 étant l'offre typique IaaS permettant d'instancier dynamiquement des machines virtuelles dans le cloud, et d'y déployer des applications ou effectuer des calculs. 
+
+~ Figure { #fig-aws_market_shares; caption: "Parts de marché des fournisseurs cloud [@synergy.market_shares]"}
+![CIS_Q414_final]
+~
+
+[CIS_Q414_final]: images/CIS_Q414_final.jpg "CIS_Q414_final" { width:auto; max-width:90% }
+
 
 ### OVH
 
-## Paas : Product as a Service
-### Définition
+## Conclusion
+Dans la myriade de fournisseurs de service IaaS, 
+
+# Paas : Platform as a Service
+## Définition
 *La possibilité donnée à l'utilisateur de déployer des applications créées à
 partir de langages, bibliothèques, services et outils supportés par le
 fournisseur. L'utilisateur ne gère pas ni ne contrôle l'infrastructure sous-
