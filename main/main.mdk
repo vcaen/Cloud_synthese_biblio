@@ -213,21 +213,21 @@ ressouces CPU et de mémoire entre les utilisateur tout en assurant la
 sécurité du système [@google_security_2012]
 
 ## Fournisseurs
-Voici une liste non exaustives des fournisseurs de service mail dans le cloud [@cloudtweaks_top_2010] :
+Voici une liste de fournisseurs de service mail dans le cloud en 2010 [@cloudtweaks_top_2010] :
 
- * Google Apps
- * Yahoo Zimbra
- * PanTerra Networks
- * Cisco WebEx Mail
- * IBM LotusLive iNotes
- * ElasticEmail
- * Microsoft Exchange Online
- * AppTix
- * AppRiver
- * RackSpace Email & Apps
+  * Google Apps for Business _50\$/utilisateur/an_
+  * Office 365 Small Business _60\$/utilisateur/an_
+  * Zoho Mail gratuit jusqu’à 10 utilisateur
+  * Atmail Cloud _79\$/mois 50 utilisateur_
+  * FastMail _40\$/an + 15\$ par compte_
+  * Hushmail 5._24\$/utilisateur/mois_
+  * Pobox _50\$/mois/comptes_
+  * Rackspace Email Hosting _2\$ par mois (10 \$ Exchange)_
 
-Pour l'étude plus approfondies, 
-nous allons nous limiter à deux acteurs majeurs, Google et Microsoft.
+
+Pour l'étude plus approfondies, nous allons nous limiter à deux acteurs
+majeurs, Google et Microsoft, qui proposen en plus des mails d'autres
+services de bureautique.
 
 ## Google Apps
 
