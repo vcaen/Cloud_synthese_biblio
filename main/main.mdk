@@ -238,6 +238,14 @@ recevoir de mail via son propre nom de domaine. [@cloud_technology_alliance_busi
 
 
 ### Migration
+
+#### Importation des anciens email, contacts et agendas
+
+Google propose des outils pour importer les mails depuis différents service
+ 
+
+
+#### Routage
 Google Apps, pour assurer une migration facile d'un serveur de mail classique vers son SaaS Gmail propose de simplement
 changer les entrées *MX* des serveurs DNS en redirigeant les requêtes de mail vers ses propres serveurs. Google
 se charge ensuite de mettre à disposition les mails envoyés et reçus par l'entrerpise dans une interface web [@google_centre_2015]
@@ -275,16 +283,51 @@ seront toujours disponibles en cas de panne.[@google_security_2012]
 
 ## Microsoft Office 365
 
-Microsoft Office 365 est, à l'instar de Google Apps, une suite de logiciels dans le cloud qui inclue un service d'email dans
-sa version "Business Premium" [^microsoft_pricing].
+### Description du service
+![Logo_O365_Orange_135x30] Microsoft Office 365 est, à l'instare de
+Google Apps, une suite de logiciels dans le cloud qui inclue un service
+d'email dans sa version "Business Premium" [^microsoft_pricing]. On y
+retrouve toute la suite d'édition de document _Office_ en ligne. Les
+offres business proposent en plus l'installation de la suite _Office_ en
+version hors ligne sur PC et Mac, mais aussi sur tablette et
+smartphone. [@microsoft_inc._microsoft_2016]
 
+[Logo_O365_Orange_135x30]: images/Logo_O365_Orange_135x30.png "Logo_O365_Orange_135x30" { width:auto; max-width:90%; margin: 5px 20px}
 [^microsoft_pricing]: <https://products.office.com/fr-fr/business/compare-office-365-for-business-plans>
+
+### Migration
+
+#### Récupération des anciens email
+La migration des mails vers Office 365 peut être plus compliqué que pour Google Apps en fonction de l'existant.
+
+Si le sytème existant utilise déjà une technologie de mail _Microsoft Exchange_, il exsite des logiciels d'assistance dévelopés
+ par microsoft et de la documentation en ligne est disponible. L'avantage de ce type de migration est qu'il n'y a pas besoin 
+ de recréer des comptes email pour les utilisateurs sur la plateform _Office 365_. [@microsoft_inc._ways_2016]
+
+La procédure se complique lorsque l'on veut importer les mail depuis un serveur mail IMAP. Les outils de Microsoft permettent uniquement
+d'importer les mail et pas les contacts et le calendrie comme on pourrait le faire depuis un serveur _Exchange_. Microsoft précise que les 
+utilisateur peuvent manuellement importer toutes leurs données de leur compte mail précédent et propose une documentation adaptée au grand 
+public pour faire ce transfert.
+
+Enfin, Microsoft propose de passer par un de ses partenaire répertorié afin de sous-traiter cette migration.
+
+#### Nouveau routage vers le cloud
+
+Comme pour Google ([#sec-google-apps]), le routage des emails vers la plateforme _Office 365_ se fait par des changement d'entrée 
+MX et CNAME dans les enregistrement DNS du nom de domaine de l'entreprise. La procédure est donc assez simple d'autant plus que 
+Microsoft fourni une application d'assitance pour faire ces changements.
+
+
+
 
 ## Comparaison des offres et de prix
 
-Toutes les offre présentées en figure [#fig-email-price] facture leur service en fonction du nombre d'utilisateur.
-Au niveau des fonctionalités offertes, on constate qu'elle sont à peu près équivalente. Google ne propose pas de synchrinisation
-avec Microsoft Outlook, Contact et Calendar car ça ferait concurrence à ses propres services inclus dans l'offre Google Apps [@google_google_2015]
+Toutes les offre présentées en figure [#fig-email-price] facture leur
+service en fonction du nombre d'utilisateur. Au niveau des fonctionalités
+offertes, on constate qu'elle sont à peu près équivalente. Google ne
+propose pas de synchrinisation avec Microsoft Outlook, Contact et
+Calendar car ça ferait concurrence à ses propres services inclus dans
+l'offre Google Apps [@google_google_2015]
 
 ~ Figure { #fig-email-price; caption:"Comparaison des prix et des offres. [@matt_hicks_email_2013]"; width:100%}
 ![mail_cloud_price_comparaison]
