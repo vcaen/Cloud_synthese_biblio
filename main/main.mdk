@@ -155,13 +155,17 @@ Liste non exhaustive des principaux fournisseurs de solutions IaaS [@_iaas_2014]
 * Microsoft Azure
 * Google Compute Engine
 * Rackspace Open Cloud
-* IBM SmartCloud Enterprise
+* IBM SmartCloud Enterprise+
 * OVH
 * DigitalOcean
 
 Nous limiterons ici l'étude à Amazon EC2 et OVH.
 
-### Amazon EC2
+## Amazon EC2
+![gpu_amazon_ec2_logo]
+
+[gpu_amazon_ec2_logo]: images/gpu_amazon_ec2_logo.png "gpu_amazon_ec2_logo" { width:auto; max-width:40%; float: right; margin: 10px}
+
 Nous avons choisi d'étudier plus en détail l'infrastructure EC2 d'Amazon Webservice, Amazon étant à la fois un pionnier historique des offres cloud [@computerweekly_history], mais également loin devant ses principaux concurrents en terme de parts de marché, toutes offres confondues [@synergy.market_shares]. Amazon propose une multitude d'offres cloud différentes [@aws_plainenglish], EC2 étant l'offre typique IaaS permettant d'instancier dynamiquement des machines virtuelles dans le cloud, et d'y déployer des applications ou effectuer des calculs. 
 
 ~ Figure { #fig-aws_market_shares; caption: "Parts de marché des fournisseurs cloud [@synergy.market_shares]"}
@@ -174,10 +178,31 @@ Amazon EC2 est utilisé pour différentes tâches, par exemple l'entreprise Netf
 
 [^EC2_Case-studies]: <https://aws.amazon.com/fr/solutions/case-studies/>
 
-### OVH
+L'utilisateur dispose d'une interface web (voir figure ci-dessous) permettant de gérer  les instances en cours ainsi que d'en créer de nouvelles. Une instance possède une adresse IP publique, ainsi qu'un statut. Concernant la migration, Amazon EC2 permet d'importer des machines virtuelles déjà existantes [@ec2_import_vm].
+~ Figure { #fig-ec2-console; caption: "Aperçu de la console de supervision des instances EC2"}
+![EC2]
+~
+
+[EC2]: images/EC2.jpg "EC2" { width:auto; max-width:90% }
+
+Comme pour la plupart des fournisseurs d'offres de ce type, les machines virtuelles sont facturées en fonction du temps d'utilisation (*uptime*) de la VM, le taux horaire étant dépendant des ressources allouées (processeur, stockage, RAM)[^EC2_pricing].
+Le prix des instances varie entre 0.007\$ par heure pour une utilisation générale de Linux avec 500Mo de RAM, jusqu'à 5.50\$ pour des machines de calcul dotée de SSDs et de plusieurs centaines de GB de mémoire.
+
+On note aussi qu'EC2 propose des instances GPU, dotée de cartes NVidia, pour des application de calculs[^EC2_GPU].
+[^EC2_GPU]: <https://aws.amazon.com/fr/ec2/instance-types/#g2>
+[^EC2_pricing]: <https://aws.amazon.com/fr/ec2/pricing/>
+
+[logo-ovh]: images/logo-ovh.jpg "logo-ovh" { width:auto; max-width:40%; float: right; margin: 10px }
+## OVH
+![logo-ovh]
+OVH, fournisseur de service français, présente une caractéristique particulière dans les offres IaaS, car il offre, en plus de la location de machines virtuelles classiques, la possibilité de louer un serveur dédié, c'est à dire une machine physique dédiée au client. Cela permet au client d'être sûr de la disponibilité des ressources de la machine, voire d'y installer son propre hyperviseur et système de gestion de machines virtuelles.
+
+Pour la partie Vitual Private Server (VPS), OVH utilise OpenStack afin d'instancier des VM et d'allouer des ressources à la volée, et KVM en tant qu'hyperviseur.
+
+D'un point de vue de l'offre, OVH propose des gammes plus réduites et centrées sur des utilisation, par exemple des offres "RAM"" de 30 à 240 Go de mémoire vive, de 0,097€ à 0,778€ par heure et par instance, ou des offres "CPU" plus orientées calcul, qui proposent de 2 à 32 coeurs de processeurs [@ovh_pricing].
 
 ## Conclusion
-Dans la myriade de fournisseurs de service IaaS, 
+Dans la myriade de fournisseurs de service IaaS, choisir une offre plutôt qu'une autre n'est pas chose aisée. Les principaux fournisseurs étant alignés en terme de prix et de fonctionalités (ressources, dynamisme, disponibilité, ...), une entreprise qui souhaite utiliser des offres IaaS peut se concentrer sur des critères plus personnels, tels que la qualité du support, les relations inter-entreprise, ou privilégier des entreprises proches. 
 
 # Paas : Platform as a Service
 ## Définition
