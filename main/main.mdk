@@ -154,6 +154,9 @@ Nous avons choisi d'étudier plus en détail l'infrastructure EC2 d'Amazon Webse
 
 [CIS_Q414_final]: images/CIS_Q414_final.jpg "CIS_Q414_final" { width:auto; max-width:90% }
 
+Amazon EC2 est utilisé pour différentes tâches, par exemple l'entreprise Netflix se base sur EC2 pour mettre à disposition son contenu cinématographique, le laboratoire JPL de la NASA (qui construit et supervise les vols non habités) l'utilise pour effectuer des tâche de calculs et de traitement de données[^EC2_Case-studies].
+
+[^EC2_Case-studies]: <https://aws.amazon.com/fr/solutions/case-studies/>
 
 ### OVH
 
