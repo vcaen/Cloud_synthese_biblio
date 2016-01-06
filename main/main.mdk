@@ -94,7 +94,10 @@ réseau (i.e pare-feu)*
 ### Technologies
 La mise à disposition de ressources cloud se base généralement sur des technologies 
 de virtualisation, permettant *l'utilisation d'un matériel par plusieurs utilisateurs* [@rackspace.cloud_computing].
-Des suites comme OpenStack [@_openstack_] permettent la gestion de large parcs de matériel et des différentes machines virtuelles qui y évoluent, notamment en instanciant dynamiquement des VMs, et en utilisant des réseaux d'hyperviseurs tels que vSphere Hypervisor (vmware) [@vmware_vsphere_hypervisor_], KVM ou Hyper-V.
+Des suites comme OpenStack [^openstack] permettent la gestion de large parcs de matériel et des différentes machines virtuelles qui y évoluent, notamment en instanciant dynamiquement des VMs, et en utilisant des réseaux d'hyperviseurs tels que vSphere Hypervisor (vmware) [^vsphere], KVM ou Hyper-V.
+
+[^vsphere]: <https://www.vmware.com/products/vsphere-hypervisor>
+[^openstack]: <https://www.openstack.org/>
 
 ~ Figure { #fig-hypervisor; caption: "Example d'architecture de gestion de matériel et virtualisation"}
 ![hyperviseur-type-1]
@@ -125,7 +128,9 @@ contrairement aux cas des offres SaaS décrites plus bas.
 
 ### Confidentialité et Maîtrise des données
 Si la plupart des fournisseurs de service IaaS garantissent la disponibilité et l'intégrité physique de leurs serveurs, la gestion des contenus sur la machine louée revient à la charge du client, qui doit mettre en place les dispositifs d'authentication, d'encryption qu'il juge nécessaire au bon fonctionnement et à l'intégrité de ses données.
-A mi-chemin entre ces deux positions, certains fournisseurs d'offres IaaS proposent la mise à disposition de Firewalls, ou de technologies contre les attaques de type DDoS [@ovh_anti_ddos_]. Certaines entreprises, comme FortyCloud [@fortycloud], sont même spécialisées dans des modules de sécurité comme des Firewalls à ajouter en sur-couche des principaux fournisseurs cloud.
+A mi-chemin entre ces deux positions, certains fournisseurs d'offres IaaS proposent la mise à disposition de Firewalls, ou de technologies contre les attaques de type DDoS [@ovh_anti_ddos_]. Certaines entreprises, comme FortyCloud[^fortycloud], sont même spécialisées dans des modules de sécurité comme des Firewalls à ajouter en sur-couche des principaux fournisseurs cloud.
+
+[^fortycloud]: <http://fortycloud.com/>
 
 ### Fournisseurs
 Liste non exhaustive des principaux fournisseurs de solutions IaaS [@_iaas_2014] :
