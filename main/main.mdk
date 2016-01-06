@@ -236,6 +236,13 @@ seront toujours disponibles en cas de panne.[@google_security_2012]
 
 ###Technologies
 
+## Microsoft Office 365
+
+Microsoft Office 365 est, à l'instar de Google Apps, une suite de logiciels dans le cloud qui inclue un service d'email dans
+sa version "Business Premium" [^microsoft_pricing].
+
+[^microsoft_pricing]: <https://products.office.com/fr-fr/business/compare-office-365-for-business-plans>
+
 ## Comparaison des offres et de prix
 
 Toutes les offre présentées en figure [#fig-email-price] facture leur service en fonction du nombre d'utilisateur.
@@ -261,7 +268,7 @@ En terme de fonctionnalités, les offres sont semblable et la décision devrait 
 en plus du service de mail. Une entreprise utilisant déjà la suite Microsoft Office pourrait vouloir rester dans un écosystème 
 Microsoft en souscrivant à Office 365. Cependant, Google offre les même services avec Google Apps for Work, incluant aussi une
 suite d'édition de documents qui selon nous n'est tout de même pas à la hauteur de la suite office. On appréciera chez google la 
-puissance de son moteur de recherche intégré à sa boite mail [@cloud_technology_alliance_business_2015].
+puissance de son moteur de recherche intégré à sa boite mail.
 
 # Annexe
 ## Bibliographie
