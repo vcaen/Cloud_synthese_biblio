@@ -73,7 +73,7 @@ ses entreprises.
 
 
 # IaaS : Infrastructure as a Service	
-## Introduction
+## Introduction et définition
 Le périmètre de cette étude se limite au cas d'une entreprise désirant migrer
 l'intégralité de son SI dans le cloud. Pour rappel, Un système d'information (SI)
 est *un ensemble organisé de ressources qui permet de collecter, stocker, traiter 
@@ -86,7 +86,7 @@ de sécurisation de l'accès aux données. L'emploi d'une solution IaaS permettr
 de créer une solution spécifique aux besoins de l'entreprise, mais demandera 
 toujours des compétences internes pour le déploiement et la maintenance des 
 applications.
-## Définition
+
 *Un cloud IaaS est défini par la mise à disposition du client de ressources des
 stockage, réseau et de calcul (processeurs) ou autre ressources numériques
 fondamentales dans lesquelles l'utilisateur à la possibilité de déployer ou
@@ -193,14 +193,13 @@ Dans la myriade de fournisseurs de service IaaS, choisir une offre plutôt qu'un
 
 &pagebreak;
 # SaaS	: Software as a Service
-## Introduction
+## Introduction et définition
 Dans le cadre de cette étude, nous allons nous placer du point de vue d'une
 entreprise souhaitant faire héberger sont courriel dans le cloud. Nous allons
 étudier les différents fournisseurs majeurs que l'on peut touver sur le marché,
 la confidentialité qu'ils promettent et les technologies qu'ils utilisent. Nous
 verrons aussi quels sont les prix pratiqués.
 
-## Définition
 *Le SaaS est la possibilité donnée à l'utilisateur d'utiliser les applications du
 fournisseur s'exécutant sur une infrastructure cloud. Les applications sont
 accessibles depuis divers appareils par le biais d'un client léger comme un
