@@ -124,6 +124,8 @@ client devra s'employer à toutes les opérations ayant trait à la couche logic
 contrairement aux cas des offres SaaS décrites plus bas.
 
 ### Confidentialité et Maîtrise des données
+Si la plupart des fournisseurs de service IaaS garantissent la disponibilité et l'intégrité physique de leurs serveurs, la gestion des contenus sur la machine louée revient à la charge du client, qui doit mettre en place les dispositifs d'authentication, d'encryption qu'il juge nécessaire au bon fonctionnement et à l'intégrité de ses données.
+A mi-chemin entre ces deux positions, certains fournisseurs d'offres IaaS proposent la mise à disposition de Firewalls, ou de technologies contre les attaques de type DDoS [@ovh_anti_ddos_]. Certaines entreprises, comme FortyCloud [@fortycloud], sont même spécialisées dans des modules de sécurité comme des Firewalls à ajouter en sur-couche des principaux fournisseurs cloud.
 
 ### Fournisseurs
 Liste non exhaustive des principaux fournisseurs de solutions IaaS [@_iaas_2014] :
