@@ -66,6 +66,20 @@ ses entreprises.
 
 
 # IaaS : Infrastructure as a Service	
+### Introduction
+Le périmètre de cette étude se limite au cas d'une entreprise désirant migrer
+l'intégralité de son SI dans le cloud. Pour rappel, Un système d'information (SI)
+est *un ensemble organisé de ressources qui permet de collecter, stocker, traiter 
+et diffuser de l'information*. [@de_courcy_les_1992] Le SI d'une entreprise peut 
+donc être constitué (entre autres) d'application de gestion des ressources humaines
+de communication interne (IRC) ou externe (mail), d'application comptables, de 
+gestion du stock, des sites internet vitrine et/ou de e-commerce.
+
+Il y a donc un besoin varié de stockage, de capacité à transférer des données, 
+de sécurisation de l'accès aux données. L'emploi d'une solution IaaS permettra 
+de créer une solution spécifique aux besoins de l'entreprise, mais demandera 
+toujours des compétences internes pour le déploiement et la maintenance des 
+applications.
 ## Définition
 *Un cloud IaaS est défini par la mise à disposition du client de ressources des
 stockage, réseau et de calcul (processeurs) ou autre ressources numériques
@@ -76,6 +90,42 @@ sous-jacente mais à le contrôle des systèmes d'exploitation, du stockage et d
 applications déployées ; et éventuellement un contrôle limité sur les composant
 réseau (i.e pare-feu)*
 [@national_institute_of_standards_and_technology_nist_2011]
+
+### Technologies
+
+
+### Fournisseurs
+Liste non exhaustive des principaux fournisseurs de solutions IaaS [@_iaas_2014] :
+
+* Amazon EC2
+* Microsoft Azure
+* Google Compute Engine
+* Rackspace Open Cloud
+* IBM SmartCloud Enterprise
+* OVH
+
+### Compétences
+Même si la maintenance matérielle, la gestion de la virtualisation, du stockage
+et des systèmes d'exploitation sont assurées par le fournisseur de l'offre IaaS,
+un grand nombre de compétences doivent rester dans l'entreprise afin d'assurer 
+la disponibilité des applications mises en oeuvres :
+
+* La gestion des ressources : la majorité des fournisseurs de solutions IaaS
+permettent d'augmenter à la volée le quota de ressource attribué (nombre de 
+machines virtuelles, mémoire vive, stockage). C'est une fonction à réaliser 
+par l'entreprise afin de surveiller sa consommation, et ainsi les tarifs.
+* La mise à niveau des logiciels utilisés
+* La gestion des comptes utilisateurs et des accès
+* La gestion des clients légers qui permettent d'accéder à l'interface cloud
+
+En conclusion, le fournisseur d'offre IaaS prend en charge les matériels et les
+fluides qui y correspondent (refroidissement, électricité)[@_datacentres_2014] afin de permettre au
+client de s'abstraire de toute une couche de compétences matérielles, mais le 
+client devra s'employer à toutes les opérations ayant trait à la couche logicielle,
+contrairement aux cas des offres PaaS décrites plus bas.
+
+### Confidentialité et Maîtrise des données
+
 ## Paas : Product as a Service
 ### Définition
 *La possibilité donnée à l'utilisateur de déployer des applications créées à
