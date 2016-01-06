@@ -92,17 +92,16 @@ réseau (i.e pare-feu)*
 [@national_institute_of_standards_and_technology_nist_2011]
 
 ### Technologies
+La mise à disposition de ressources cloud se base généralement sur des technologies 
+de virtualisation, permettant *l'utilisation d'un matériel par plusieurs utilisateurs* [@rackspace.cloud_computing].
+Des suites comme OpenStack [@_openstack_] permettent la gestion de large parcs de matériel et des différentes machines virtuelles qui y évoluent, notamment en instanciant dynamiquement des VMs, et en utilisant des réseaux d'hyperviseurs tels que vSphere Hypervisor (vmware) [@vmware_vsphere_hypervisor_], KVM ou Hyper-V.
 
+~ Figure { #fig-hypervisor; caption: "Example d'architecture de gestion de matériel et virtualisation"}
+![hyperviseur-type-1]
+~
 
-### Fournisseurs
-Liste non exhaustive des principaux fournisseurs de solutions IaaS [@_iaas_2014] :
+[hyperviseur-type-1]: images/hyperviseur-type-1.png "hyperviseur-type-1" { width:auto; max-width:90% }
 
-* Amazon EC2
-* Microsoft Azure
-* Google Compute Engine
-* Rackspace Open Cloud
-* IBM SmartCloud Enterprise
-* OVH
 
 ### Compétences
 Même si la maintenance matérielle, la gestion de la virtualisation, du stockage
@@ -122,9 +121,25 @@ En conclusion, le fournisseur d'offre IaaS prend en charge les matériels et les
 fluides qui y correspondent (refroidissement, électricité)[@_datacentres_2014] afin de permettre au
 client de s'abstraire de toute une couche de compétences matérielles, mais le 
 client devra s'employer à toutes les opérations ayant trait à la couche logicielle,
-contrairement aux cas des offres PaaS décrites plus bas.
+contrairement aux cas des offres SaaS décrites plus bas.
 
 ### Confidentialité et Maîtrise des données
+
+### Fournisseurs
+Liste non exhaustive des principaux fournisseurs de solutions IaaS [@_iaas_2014] :
+
+* Amazon EC2
+* Microsoft Azure
+* Google Compute Engine
+* Rackspace Open Cloud
+* IBM SmartCloud Enterprise
+* OVH
+
+Nous limiterons ici l'étude à Amazon EC2 et OVH.
+
+### Amazon EC2
+
+### OVH
 
 ## Paas : Product as a Service
 ### Définition
