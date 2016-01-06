@@ -241,11 +241,12 @@ recevoir de mail via son propre nom de domaine. [@cloud_technology_alliance_busi
 
 #### Importation des anciens email, contacts et agendas
 
-Google propose des outils pour importer les mails depuis différents service
- 
-~ Figure { #fig-myfigure; caption:"My caption."}
+Google propose des outils pour importer les mails depuis différents service.
 
+~ Figure { #fig-myfigure; caption:"Services compatible pour l'importation de mail vers Google Apps [@google_choisir_2015]"}
+![google_apps_migration]
 ~
+[google_apps_migration]: image/google_mail_migration.PNG "Importer les mails vers google apps"
 
 
 
