@@ -92,17 +92,19 @@ réseau (i.e pare-feu)*
 [@national_institute_of_standards_and_technology_nist_2011]
 
 ### Technologies
+La mise à disposition de ressources cloud se base généralement sur des technologies 
+de virtualisation, permettant *l'utilisation d'un matériel par plusieurs utilisateurs* [@rackspace.cloud_computing].
+Des suites comme OpenStack [^openstack] permettent la gestion de large parcs de matériel et des différentes machines virtuelles qui y évoluent, notamment en instanciant dynamiquement des VMs, et en utilisant des réseaux d'hyperviseurs tels que vSphere Hypervisor (vmware) [^vsphere], KVM ou Hyper-V.
 
+[^vsphere]: <https://www.vmware.com/products/vsphere-hypervisor>
+[^openstack]: <https://www.openstack.org/>
 
-### Fournisseurs
-Liste non exhaustive des principaux fournisseurs de solutions IaaS [@_iaas_2014] :
+~ Figure { #fig-hypervisor; caption: "Example d'architecture de gestion de matériel et virtualisation"}
+![hyperviseur-type-1]
+~
 
-* Amazon EC2
-* Microsoft Azure
-* Google Compute Engine
-* Rackspace Open Cloud
-* IBM SmartCloud Enterprise
-* OVH
+[hyperviseur-type-1]: images/hyperviseur-type-1.png "hyperviseur-type-1" { width:auto; max-width:90% }
+
 
 ### Compétences
 Même si la maintenance matérielle, la gestion de la virtualisation, du stockage
@@ -122,9 +124,29 @@ En conclusion, le fournisseur d'offre IaaS prend en charge les matériels et les
 fluides qui y correspondent (refroidissement, électricité)[@_datacentres_2014] afin de permettre au
 client de s'abstraire de toute une couche de compétences matérielles, mais le 
 client devra s'employer à toutes les opérations ayant trait à la couche logicielle,
-contrairement aux cas des offres PaaS décrites plus bas.
+contrairement aux cas des offres SaaS décrites plus bas.
 
 ### Confidentialité et Maîtrise des données
+Si la plupart des fournisseurs de service IaaS garantissent la disponibilité et l'intégrité physique de leurs serveurs, la gestion des contenus sur la machine louée revient à la charge du client, qui doit mettre en place les dispositifs d'authentication, d'encryption qu'il juge nécessaire au bon fonctionnement et à l'intégrité de ses données.
+A mi-chemin entre ces deux positions, certains fournisseurs d'offres IaaS proposent la mise à disposition de Firewalls, ou de technologies contre les attaques de type DDoS [@ovh_anti_ddos_]. Certaines entreprises, comme FortyCloud[^fortycloud], sont même spécialisées dans des modules de sécurité comme des Firewalls à ajouter en sur-couche des principaux fournisseurs cloud.
+
+[^fortycloud]: <http://fortycloud.com/>
+
+### Fournisseurs
+Liste non exhaustive des principaux fournisseurs de solutions IaaS [@_iaas_2014] :
+
+* Amazon EC2
+* Microsoft Azure
+* Google Compute Engine
+* Rackspace Open Cloud
+* IBM SmartCloud Enterprise
+* OVH
+
+Nous limiterons ici l'étude à Amazon EC2 et OVH.
+
+### Amazon EC2
+
+### OVH
 
 ## Paas : Product as a Service
 ### Définition
@@ -236,6 +258,13 @@ seront toujours disponibles en cas de panne.[@google_security_2012]
 
 ###Technologies
 
+## Microsoft Office 365
+
+Microsoft Office 365 est, à l'instar de Google Apps, une suite de logiciels dans le cloud qui inclue un service d'email dans
+sa version "Business Premium" [^microsoft_pricing].
+
+[^microsoft_pricing]: <https://products.office.com/fr-fr/business/compare-office-365-for-business-plans>
+
 ## Comparaison des offres et de prix
 
 Toutes les offre présentées en figure [#fig-email-price] facture leur service en fonction du nombre d'utilisateur.
@@ -261,7 +290,7 @@ En terme de fonctionnalités, les offres sont semblable et la décision devrait 
 en plus du service de mail. Une entreprise utilisant déjà la suite Microsoft Office pourrait vouloir rester dans un écosystème 
 Microsoft en souscrivant à Office 365. Cependant, Google offre les même services avec Google Apps for Work, incluant aussi une
 suite d'édition de documents qui selon nous n'est tout de même pas à la hauteur de la suite office. On appréciera chez google la 
-puissance de son moteur de recherche intégré à sa boite mail [@cloud_technology_alliance_business_2015].
+puissance de son moteur de recherche intégré à sa boite mail.
 
 # Annexe
 ## Bibliographie
