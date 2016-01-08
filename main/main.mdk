@@ -18,7 +18,7 @@ name-references: Bibliographie
 &pagebreak;
 
 # Rappel du sujet
-Dans le cycle de vie des technologies émergentes, l’informative en nuage («
+Dans le cycle de vie des technologies émergentes, l’informatique en nuage («
 cloud computing ») est aujourd’hui en passe, du moins dans certaines de ses
 composantes, d’atteindre le « plateau de la productivité », caractéristique des
 technologies matures.
@@ -26,15 +26,12 @@ technologies matures.
 L’objet de ce projet est ainsi de dresser un panorama des principales offres
 présentes sur le marché, des services offerts (services de
 monitoring/surveillance, de migration d’application, de gestion de
-plateforme...), des coûts respectifs des différentes offres, des principales
+plateforme...), des coûts respectifs des différentes offres ainsi que des principales
 technologies mises en œuvre.
 
-On se placera, afin de réduire le spectre de l’étude selon trois points de vue
+On se placera, afin de réduire le spectre de l’étude selon deux points de vue
 client : une entreprise souhaitant faire héberger son courriel sur le cloud
-(SaaS : Software as a Service), une entreprise souhaitant lancer un site de
-e-commerce de portée européenne (PaaS : Platform as a Service), enfin une
-entreprise souhaitant migrer (presque) tout son SI dans le cloud (IaaS :
-Infrastructure as a Service).
+(SaaS : Software as a Service), et une entreprise souhaitant migrer (presque) tout son SI dans le cloud (IaaS : Infrastructure as a Service).
 
 Des critères d’aide à la décision seront proposés afin de faciliter la
 comparaison des offres étudiées.
@@ -42,61 +39,54 @@ comparaison des offres étudiées.
 #Introduction
 ##	Qu'est ce que le Cloud ?	
 D'après le NIST (National Institute of Standards and Technology), le cloud est
-défini comme suit : "Le cloud computing est un model permettant un accès
+défini comme suit : "*Le cloud computing est un modèle permettant un accès
 confortable, à la demande et omniprésent à un ensemble de ressources numériques
 (i.e, réseaux, serveurs, stockage, applications et services) qui peuvent être
 provisionnés et publiés avec un effort minimal de gestion ou d'interaction avec
-le fournisseur de service."
+le fournisseur de service.*"
 [@national_institute_of_standards_and_technology_nist_2011]
 
 
 ## Statistique Utilisation Cloud
-L'utilisation d'application dans le cloud est en constante augmentation.
+L'utilisation d'applications dans le cloud est en constante augmentation.
 Cependant la France se situe encore en dessous de la moyenne européenne en
-terme du taux d'entrerpise utilisant le cloud pour ses applications. En effet,
-on compte environ 12% des entreprises françaises utilisant des services du
+terme du taux d'entreprises utilisant le cloud pour leurs applications. En effet,
+on compte environ 12% des entreprises françaises utilisant des services de
 cloud contre une moyenne de 19% dans l'Union Européenne. La Finlande sort
 grande gagnante puisqu'elle comptabilise 51% de taux d'utilisation du cloud par
 ses entreprises.
 
-~ Figure { #fig-use-stat-europ; caption: "Utilisation des services de cloud ( %des entreprises) @konstantinos_giannakouri_cloud_2014 "}
+~ Figure { #fig-use-stat-europ; caption: "Utilisation des services de cloud [@konstantinos_giannakouri_cloud_2014] "}
 ![cloud_service_usage_in_europ]
 ~
 
- [CNET](#fig-cnet) prévoit une croissance exponentielle  du marché du cloud en France une augmentaion de pres de 400% en 6 ans 
+ [CNET](#fig-cnet) prévoit une croissance exponentielle du marché du cloud en France, une augmentation de près de 400% en 6 ans.
 
-
-~ Figure { #fig-cnet; caption:"Evolution du marché du cloud en france entre 2012 et 2018. @_chiffres_2014"}
+~ Figure { #fig-cnet; caption:"Evolution prévue du marché du cloud en France entre 2012 et 2018. [@_chiffres_2014]"}
 ![evolution_cloud]
 ~
 
-
 [evolution_cloud]: images/evolution_cloud.jpg "evolution_cloud" { width:auto; max-width:90% }
-
-
-
-
 [cloud_service_usage_in_europ]: images/cloud_service_usage_in_europ.png "Utilisation des services de cloud ( % des entreprises)" { width:auto; max-width:90% }
 
 
 
 
 # IaaS : Infrastructure as a Service	
-## Introduction
+## Introduction et définition
 Le périmètre de cette étude se limite au cas d'une entreprise désirant migrer
 l'intégralité de son SI dans le cloud. Pour rappel, Un système d'information (SI)
 est *un ensemble organisé de ressources qui permet de collecter, stocker, traiter 
 et diffuser de l'information*. [@de_courcy_les_1992] Le SI d'une entreprise peut 
-donc être constitué (entre autres) d'application de gestion des ressources humaines
-de communication interne (IRC) ou externe (mail), d'application comptables, de 
-gestion du stock, des sites internet vitrine et/ou de e-commerce.
+donc être constitué (entre autres) d'applications interconnectées de gestion des ressources humaines, de communication interne (IRC) ou externe (mail), comptables, de 
+gestion du stock, des sites internet vitrines et/ou de e-commerce.
 
 Il y a donc un besoin varié de stockage, de capacité à transférer des données, 
 de sécurisation de l'accès aux données. L'emploi d'une solution IaaS permettra 
 de créer une solution spécifique aux besoins de l'entreprise, mais demandera 
 toujours des compétences internes pour le déploiement et la maintenance des 
 applications.
-## Définition
+
 *Un cloud IaaS est défini par la mise à disposition du client de ressources des
 stockage, réseau et de calcul (processeurs) ou autre ressources numériques
 fondamentales dans lesquelles l'utilisateur à la possibilité de déployer ou
@@ -115,7 +105,7 @@ Des suites comme OpenStack [^openstack] permettent la gestion de large parcs de 
 [^vsphere]: <https://www.vmware.com/products/vsphere-hypervisor>
 [^openstack]: <https://www.openstack.org/>
 
-~ Figure { #fig-hypervisor; caption: "Example d'architecture de gestion de matériel et virtualisation"}
+~ Figure { #fig-hypervisor; caption: "Exemple d'architecture de gestion de matériel et virtualisation"}
 ![hyperviseur-type-1]
 ~
 
@@ -137,13 +127,11 @@ par l'entreprise afin de surveiller sa consommation, et ainsi les tarifs.
 * La gestion des clients légers qui permettent d'accéder à l'interface cloud
 
 En conclusion, le fournisseur d'offre IaaS prend en charge les matériels et les
-fluides qui y correspondent (refroidissement, électricité)[@_datacentres_2014] afin de permettre au
-client de s'abstraire de toute une couche de compétences matérielles, mais le 
-client devra s'employer à toutes les opérations ayant trait à la couche logicielle,
+fluides qui y correspondent (refroidissement, électricité)[@_datacentres_2014] afin de permettre au client de s'abstraire de toute une couche de compétences matérielles, mais il devra s'employer à toutes les opérations ayant trait à la couche logicielle,
 contrairement aux cas des offres SaaS décrites plus bas.
 
 ## Confidentialité et Maîtrise des données
-Si la plupart des fournisseurs de service IaaS garantissent la disponibilité et l'intégrité physique de leurs serveurs, la gestion des contenus sur la machine louée revient à la charge du client, qui doit mettre en place les dispositifs d'authentication, d'encryption qu'il juge nécessaire au bon fonctionnement et à l'intégrité de ses données.
+Si la plupart des fournisseurs de service IaaS garantissent la disponibilité et l'intégrité physique de leurs serveurs, la gestion des contenus sur la machine louée revient à la charge du client, qui doit mettre en place les dispositifs d'authentification, d'encryption qu'il juge nécessaire au bon fonctionnement et à l'intégrité de ses données.
 A mi-chemin entre ces deux positions, certains fournisseurs d'offres IaaS proposent la mise à disposition de Firewalls, ou de technologies contre les attaques de type DDoS [@ovh_anti_ddos_]. Certaines entreprises, comme FortyCloud[^fortycloud], sont même spécialisées dans des modules de sécurité comme des Firewalls à ajouter en sur-couche des principaux fournisseurs cloud.
 
 [^fortycloud]: <http://fortycloud.com/>
@@ -155,13 +143,16 @@ Liste non exhaustive des principaux fournisseurs de solutions IaaS [@_iaas_2014]
 * Microsoft Azure
 * Google Compute Engine
 * Rackspace Open Cloud
-* IBM SmartCloud Enterprise
+* IBM SmartCloud Enterprise+
 * OVH
-* DigitalOcean
 
 Nous limiterons ici l'étude à Amazon EC2 et OVH.
 
-### Amazon EC2
+## Amazon EC2
+![gpu_amazon_ec2_logo]
+
+[gpu_amazon_ec2_logo]: images/gpu_amazon_ec2_logo.png "gpu_amazon_ec2_logo" { width:auto; max-width:40%; float: right; margin: 10px}
+
 Nous avons choisi d'étudier plus en détail l'infrastructure EC2 d'Amazon Webservice, Amazon étant à la fois un pionnier historique des offres cloud [@computerweekly_history], mais également loin devant ses principaux concurrents en terme de parts de marché, toutes offres confondues [@synergy.market_shares]. Amazon propose une multitude d'offres cloud différentes [@aws_plainenglish], EC2 étant l'offre typique IaaS permettant d'instancier dynamiquement des machines virtuelles dans le cloud, et d'y déployer des applications ou effectuer des calculs. 
 
 ~ Figure { #fig-aws_market_shares; caption: "Parts de marché des fournisseurs cloud [@synergy.market_shares]"}
@@ -170,35 +161,45 @@ Nous avons choisi d'étudier plus en détail l'infrastructure EC2 d'Amazon Webse
 
 [CIS_Q414_final]: images/CIS_Q414_final.jpg "CIS_Q414_final" { width:auto; max-width:90% }
 
-Amazon EC2 est utilisé pour différentes tâches, par exemple l'entreprise Netflix se base sur EC2 pour mettre à disposition son contenu cinématographique, le laboratoire JPL de la NASA (qui construit et supervise les vols non habités) l'utilise pour effectuer des tâche de calculs et de traitement de données[^EC2_Case-studies].
+Amazon EC2 est utilisé pour des tâches variées, par exemple l'entreprise Netflix se base sur EC2 pour mettre à disposition son contenu cinématographique, le laboratoire JPL de la NASA (qui construit et supervise les vols non habités) l'utilise pour effectuer des tâche de calculs et de traitement de données[^EC2_Case-studies].
 
 [^EC2_Case-studies]: <https://aws.amazon.com/fr/solutions/case-studies/>
 
-### OVH
+L'utilisateur dispose d'une interface web (voir figure ci-dessous) permettant de gérer  les instances en cours ainsi que d'en créer de nouvelles. Une instance possède une adresse IP publique, ainsi qu'un statut. Concernant la migration, Amazon EC2 permet d'importer des machines virtuelles déjà existantes [@ec2_import_vm].
+~ Figure { #fig-ec2-console; caption: "Aperçu de la console de supervision des instances EC2"}
+![EC2]
+~
+
+[EC2]: images/EC2.jpg "EC2" { width:auto; max-width:90% }
+
+Comme pour la plupart des fournisseurs d'offres de ce type, les machines virtuelles sont facturées en fonction du temps d'utilisation (*uptime*) de la VM, le taux horaire étant dépendant des ressources allouées (processeur, stockage, RAM)[^EC2_pricing].
+Le prix des instances varie entre 0.007\$ par heure pour une utilisation générale de Linux avec 500Mo de RAM, jusqu'à 5.50\$ pour des machines de calcul dotée de SSDs et de plusieurs centaines de GB de mémoire.
+
+On note aussi qu'EC2 propose des instances GPU, dotées de cartes NVidia, pour des application de calculs[^EC2_GPU].
+[^EC2_GPU]: <https://aws.amazon.com/fr/ec2/instance-types/#g2>
+[^EC2_pricing]: <https://aws.amazon.com/fr/ec2/pricing/>
+
+[logo-ovh]: images/logo-ovh.jpg "logo-ovh" { width:auto; max-width:40%; float: right; margin: 10px }
+## OVH
+![logo-ovh]
+OVH, fournisseur de service français, présente une caractéristique particulière dans les offres IaaS, car il offre, en plus de la location de machines virtuelles classiques, la possibilité de louer un serveur dédié, c'est à dire une machine physique dédiée au client. Cela permet au client d'être sûr de la disponibilité des ressources de la machine, voire d'y installer son propre hyperviseur et système de gestion de machines virtuelles.
+
+Pour la partie Vitual Private Server (VPS), OVH utilise OpenStack afin d'instancier des VM et d'allouer des ressources à la volée, et KVM en tant qu'hyperviseur.
+
+D'un point de vue de l'offre, OVH propose des gammes plus réduites et centrées sur des utilisation, par exemple des offres "*RAM*" de 30 à 240 GB de mémoire vive, de 0,097€ à 0,778€ par heure et par instance, ou des offres "*CPU*" plus orientées calcul, qui proposent de 2 à 32 coeurs de processeurs [@ovh_pricing].
 
 ## Conclusion
-Dans la myriade de fournisseurs de service IaaS, 
-
-# Paas : Platform as a Service
-## Définition
-*La possibilité donnée à l'utilisateur de déployer des applications créées à
-partir de langages, bibliothèques, services et outils supportés par le
-fournisseur. L'utilisateur ne gère pas ni ne contrôle l'infrastructure sous-
-jacente, y compris le réseau, les serveurs, les systèmes d'exploitation ou le
-stockage, mais a le contrôle sur les applications déployées et éventuellement
-la possibilité de configurer l'environnement d'hébergement des applications.*
-[@national_institute_of_standards_and_technology_nist_2011]
+Dans la myriade de fournisseurs de service IaaS, choisir une offre plutôt qu'une autre n'est pas chose aisée. Les principaux fournisseurs étant alignés en terme de prix et de fonctionalités (ressources, scalabilité, disponibilité, ...), une entreprise qui souhaite utiliser des offres IaaS peut se concentrer sur des critères plus personnels, tels que la qualité du support, les relations inter-entreprise, ou privilégier des entreprises proches. 
 
 &pagebreak;
 # SaaS	: Software as a Service
-## Introduction
+## Introduction et définition
 Dans le cadre de cette étude, nous allons nous placer du point de vue d'une
 entreprise souhaitant faire héberger sont courriel dans le cloud. Nous allons
 étudier les différents fournisseurs majeurs que l'on peut touver sur le marché,
 la confidentialité qu'ils promettent et les technologies qu'ils utilisent. Nous
-verrons aussi quels sont les prix qu'ils pratiquent.
+verrons aussi quels sont les prix pratiqués.
 
-## Définition
 *Le SaaS est la possibilité donnée à l'utilisateur d'utiliser les applications du
 fournisseur s'exécutant sur une infrastructure cloud. Les applications sont
 accessibles depuis divers appareils par le biais d'un client léger comme un
@@ -207,7 +208,7 @@ n'a aucun contrôle sur l'infrastructure. Il peut cependant avoir un accès
 limité à des configurations de l'application spécifiques à son utilisation.*
 [@national_institute_of_standards_and_technology_nist_2011]
 
-Google rajoute qu'un cloud est caractérisé par un service redondant et
+Google ajoute qu'un cloud est caractérisé par un service redondant et
 une allocation de ressources dynamique qui permet un partage des
 ressouces CPU et de mémoire entre les utilisateur tout en assurant la
 sécurité du système [@google_security_2012]
@@ -225,7 +226,7 @@ Voici une liste de fournisseurs de service mail dans le cloud en 2010 [@cloudtwe
   * Rackspace Email Hosting _2\$ par mois (10 \$ Exchange)_
 
 
-Pour l'étude plus approfondies, nous allons nous limiter à deux acteurs
+Pour l'étude plus approfondie, nous allons nous limiter à deux acteurs
 majeurs, Google et Microsoft, qui proposen en plus des mails d'autres
 services de bureautique.
 
@@ -249,8 +250,8 @@ nous concentrer sur l'application Gmail qui permet de retrouver toutes
 les fonctionnalités offertes au grand public sur la version gratuite de
 Gmail mais en permettant à l'entrepise de personnaliser son interface
 avec par exemple son propore logo et surtout de pouvoir envoyer et
-recevoir de mail via son propre nom de
-domaine. [@cloud_technology_alliance_business_2015]
+recevoir des mail via son propre nom de domaine. 
+[@cloud_technology_alliance_business_2015]
 
 ~ Figure { #fig-use-stat-europ; caption: "Example d'interface de Gmail for work"}
 ![gmail_screenshot]
@@ -273,8 +274,8 @@ Google propose des outils pour importer les mails depuis différents service.
 [google_apps_migration]: images/google_mail_migration.PNG "Importer les mails vers google apps"
 
 Le principal outil nomé _GAMME_ pour _Google Apps Migration for
-Microsoft® Exchange_ supporte un grand nombre de service pour
-l'importation ce qui devrait convenir à la plupart des entreprises.
+Microsoft® Exchange_ supporte un grand nombre de services pour
+l'importation qui devraient convenir à la plupart des entreprises.
 
 
 
@@ -284,7 +285,7 @@ classique vers son SaaS Gmail propose de simplement changer les entrées
 *MX* des serveurs DNS en redirigeant les requêtes de mail vers ses
 propres serveurs. Google se charge ensuite de mettre à disposition les
 mails envoyés et reçus par l'entrerpise dans une interface
-web [@google_centre_2015]
+web [@google_centre_2015].
 
 ### Sécurité des données
 
@@ -298,7 +299,7 @@ plan virutel que physique. L'entreprise souligne d'ailleurs :
   systèmes, la gestion des changement, la réponse aux incident et la
   sécurité des data centers* (traduction)[@google_security_2012]
 
-Afin de pallier à une éventuelle attaque venue de l'extérieur, Google
+Afin de pallier une éventuelle attaque venue de l'extérieur, Google
 dispose d'une équipe disponible vingt-quatre heures sur vingt-quatre et
 sept jours sur sept. Cette équipe s'occupe de monitorer les services
 Google et de répondre à toute tentative de cyber attaque. De plus, pour
@@ -307,7 +308,7 @@ Google et de répondre à toute tentative de cyber attaque. De plus, pour
 infrastructures. [@google_security_2012]
 
 Sur le plan de la résitance aux dysfonctionnement, Google utilise son
-propre système de fichier avec un stockage distrbué et anonymisé. La
+propre système de fichier avec un stockage distribué et anonymisé. La
 structure du système de fichier est conservée sur une base de donnée
 ditribuée. Ainsi, Google assure que les données des ces utilisateurs
 seront toujours disponibles en cas de panne.[@google_security_2012]
@@ -319,22 +320,24 @@ seront toujours disponibles en cas de panne.[@google_security_2012]
 
 [google_apps_server_architecture]: images/google_apps_server_architecture.PNG "Example d'interface de Gmail for work" { width:auto; max-width:90% }
 
-
-
-### Confidentialité
-
-###Technologies
-
 ## Microsoft Office 365
 
 ### Description du service
-![Logo_O365_Orange_135x30] Microsoft Office 365 est, à l'instare de
-Google Apps, une suite de logiciels dans le cloud qui inclue un service
+![Logo_O365_Orange_135x30] Microsoft Office 365 est, à l'instar de
+Google Apps, une suite de logiciels dans le cloud qui inclut un service
 d'email dans sa version "Business Premium" [^microsoft_pricing]. On y
 retrouve toute la suite d'édition de document _Office_ en ligne. Les
 offres business proposent en plus l'installation de la suite _Office_ en
 version hors ligne sur PC et Mac, mais aussi sur tablette et
 smartphone. [@microsoft_inc._microsoft_2016]
+
+
+Office 365 donne aussi la possibilité de modifier le thème des applications et le logo afin de respecter la charte graphique de l'entreprise [@team_personalize_2014].
+
+![Manage-custom-themes-for-your-organization]
+
+[Manage-custom-themes-for-your-organization]: images/Manage-custom-themes-for-your-organization.png "Manage-custom-themes-for-your-organization" { width:auto; max-width:70% }
+
 
 [Logo_O365_Orange_135x30]: images/Logo_O365_Orange_135x30.png "Logo_O365_Orange_135x30" { width:auto; max-width:90%; margin: 5px 20px}
 [^microsoft_pricing]: <https://products.office.com/fr-fr/business/compare-office-365-for-business-plans>
@@ -342,11 +345,11 @@ smartphone. [@microsoft_inc._microsoft_2016]
 ### Migration
 
 #### Récupération des anciens email
-La migration des mails vers Office 365 peut être plus compliqué que pour
+La migration des mails vers Office 365 peut être plus compliquée que pour
 Google Apps en fonction de l'existant.
 
 Si le sytème existant utilise déjà une technologie de mail _Microsoft
- Exchange_, il exsite des logiciels d'assistance dévelopés par microsoft
+ Exchange_, il existe des logiciels d'assistance développés par microsoft
  et de la documentation en ligne est disponible. L'avantage de ce type de
  migration est qu'il n'y a pas besoin de recréer des comptes email pour
  les utilisateurs sur la plateform _Office
@@ -354,13 +357,13 @@ Si le sytème existant utilise déjà une technologie de mail _Microsoft
 
 La procédure se complique lorsque l'on veut importer les mail depuis un
 serveur mail IMAP. Les outils de Microsoft permettent uniquement
-d'importer les mail et pas les contacts et le calendrie comme on pourrait
+d'importer les mail et pas les contacts et le calendrier comme on pourrait
 le faire depuis un serveur _Exchange_. Microsoft précise que les
 utilisateur peuvent manuellement importer toutes leurs données de leur
 compte mail précédent et propose une documentation adaptée au grand
 public pour faire ce transfert.
 
-Enfin, Microsoft propose de passer par un de ses partenaire répertorié afin de sous-traiter cette migration.
+Enfin, Microsoft propose de passer par un de ses partenaires répertoriés afin de sous-traiter cette migration.
 
 #### Nouveau routage vers le cloud
 
@@ -368,19 +371,17 @@ Comme pour Google ([#sec-google-apps]), le routage des emails vers la
 plateforme _Office 365_ se fait par des changement d'entrée MX et CNAME
 dans les enregistrement DNS du nom de domaine de l'entreprise. La
 procédure est donc assez simple d'autant plus que Microsoft fourni une
-application d'assitance pour faire ces changements.
-
-
+application d'assitance pour réaliser ces changements.
 
 
 ## Comparaison des offres et de prix
 
-Toutes les offre présentées en figure [#fig-email-price] facture leur
-service en fonction du nombre d'utilisateur. Au niveau des fonctionalités
+Toutes les offre présentées en figure [#fig-email-price] facturent leur
+service en fonction du nombre d'utilisateurs. Au niveau des fonctionalités
 offertes, on constate qu'elle sont à peu près équivalente. Google ne
 propose pas de synchronisation avec Microsoft Outlook, Contact et
-Calendar car ça ferait concurrence à ses propres services inclus dans
-l'offre Google Apps [@google_google_2015]
+Calendar afin de ne pas favoriser la concurrence à ses propres services inclus dans
+l'offre Google Apps [@google_google_2015].
 
 ~ Figure { #fig-email-price; caption:"Comparaison des prix et des offres. [@matt_hicks_email_2013]"; width:100%}
 ![mail_cloud_price_comparaison]
@@ -388,9 +389,7 @@ l'offre Google Apps [@google_google_2015]
 ~
 
 
-
 [mail_cloud_price_comparaison]: images/mail_cloud_price_comparaison.PNG "mail_cloud_price_comparaison" { width:auto; max-width:90% }
-
 
 
 	
@@ -398,13 +397,13 @@ l'offre Google Apps [@google_google_2015]
 
 Le choix d'un service de mail dans le cloud reste assez limité et seuls
 Google et Microsoft se démarquent vraiment du lot. En terme de
-fonctionnalités, les offres sont semblable et la décision devrait plutôt
+fonctionnalités, les offres sont semblables et la décision devrait plutôt
 se faire sur l'environnement offert en plus du service de mail. Une
 entreprise utilisant déjà la suite Microsoft Office pourrait vouloir
 rester dans un écosystème Microsoft en souscrivant à Office 365.
 Cependant, Google offre les même services avec Google Apps for Work,
-incluant aussi une suite d'édition de documents qui selon nous n'est tout
-de même pas à la hauteur de la suite office. On appréciera chez google la
+incluant également une suite d'édition de documents qui selon nous n'est tout
+de même pas à la hauteur de la suite office. On appréciera chez Google la
 puissance de son moteur de recherche intégré à sa boite mail.
 
 &pagebreak;
