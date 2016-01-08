@@ -261,9 +261,22 @@ recevoir des mail via son propre nom de domaine.
 [gmail_screenshot]: images/gmail_screenshot.png "Example d'interface de Gmail for work" { width:auto; max-width:90% }
 [google_apps_logo]: images/google_apps_logo.PNG "google_apps_logo" { width:auto; max-width:33%; float: right; margin: 15px }
 
-
+ 
 ### Migration
 
+#### Mise en place
+D'apres Techradar [@marshall_google_2016], la mise en place de Google
+Apps est très aisée. Il suffit de quelques secondes pour s'inscrire puis
+l'utilisateur est dirigé vers une page d'administration contenant des
+rubriques pour gérer entre autre les données sur les utilisateur. L'une
+des fonctionnalité que souligne l'auteur est la possibilité de créer les
+comptes utilisateurs à partir d'un fichier CSV[^csv]. Le problème soulevé cependant est l'impossibilité 
+de lié ses comptes google particuliers à son compte google apps.
+
+
+
+
+[^csv]: https://fr.wikipedia.org/wiki/Comma-separated_values
 #### Importation des anciens email, contacts et agendas
 
 Google propose des outils pour importer les mails depuis différents service.
