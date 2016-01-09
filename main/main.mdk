@@ -5,7 +5,7 @@ Document Class: [11pt]article
 Bib           : biblio/cloud
 Toc Depth     : 3 
 Logo          : False
-Cite Style    : numeric
+Cite Style    : natural
 ~a            : .tex-tooltip
 name-references: Bibliographie
 
@@ -208,10 +208,26 @@ n'a aucun contrôle sur l'infrastructure. Il peut cependant avoir un accès
 limité à des configurations de l'application spécifiques à son utilisation.*
 [@national_institute_of_standards_and_technology_nist_2011]
 
+
 Google ajoute qu'un cloud est caractérisé par un service redondant et
 une allocation de ressources dynamique qui permet un partage des
 ressouces CPU et de mémoire entre les utilisateur tout en assurant la
-sécurité du système [@google_security_2012]
+sécurité du système [@google_security_2010]
+
+~ Figure { #fig-cloud-adoption; caption:"Primary reason for cloud adoption, Springboard research, 07/2008."; margin: auto;width:70%;} 
+![reason_to_adopte_cloud]
+
+[reason_to_adopte_cloud]: images/reason_to_adopte_cloud.PNG "reason_to_adopte_cloud" { width:auto; max-width:90% }
+
+~
+
+Les principales raisons d'adoption du Saas ( figure [#fig-cloud-adoption]
+) pour les entreprises sont la facilité d'utilisation, les coûts réduit
+et la rapidité de développement.
+
+
+
+
 
 ## Fournisseurs
 Voici une liste de fournisseurs de service mail dans le cloud en 2010 [@cloudtweaks_top_2010] :
@@ -224,6 +240,7 @@ Voici une liste de fournisseurs de service mail dans le cloud en 2010 [@cloudtwe
   * Hushmail 5._24\$/utilisateur/mois_
   * Pobox _50\$/mois/comptes_
   * Rackspace Email Hosting _2\$ par mois (10 \$ Exchange)_
+
 
 
 Pour l'étude plus approfondie, nous allons nous limiter à deux acteurs
@@ -314,7 +331,7 @@ plan virutel que physique. L'entreprise souligne d'ailleurs :
   physiques, les comptes, les services d'entreprise, le réseau, les
   systèmes d'information, les services d'applications, les services
   systèmes, la gestion des changement, la réponse aux incident et la
-  sécurité des data centers* (traduction)[@google_security_2012]
+  sécurité des data centers* (traduction)[@google_security_2010]
 
 Afin de pallier une éventuelle attaque venue de l'extérieur, Google
 dispose d'une équipe disponible vingt-quatre heures sur vingt-quatre et
@@ -322,22 +339,46 @@ sept jours sur sept. Cette équipe s'occupe de monitorer les services
 Google et de répondre à toute tentative de cyber attaque. De plus, pour
 éviter toute intrusion physique dans le système, une équipe de sécurité
 (vigiles) est présente dans toutes ses
-infrastructures. [@google_security_2012]
+infrastructures. [@google_security_2010]
 
 Sur le plan de la résitance aux dysfonctionnements, Google utilise son
 propre système de fichier avec un stockage distribué et anonymisé. La
 structure du système de fichier est conservée sur une base de données
 ditribuée. Ainsi, Google assure que les données des ses utilisateurs
-seront toujours disponibles en cas de panne d'un serveur.[@google_security_2012]
+seront toujours disponibles en cas de panne d'un serveur.[@google_security_2010]
 
 ~ Figure { #fig-gapps-archit; caption: "Environnement distribué de Google Apps"}
 ![google_apps_server_architecture]
 ~
 
+### Confidentialité des données
+Dans son livre blanc sur la sécurité [@google_security_2010], Google détails des aspects sur la 
+confidentialité des données de Google Apps stockée sur leur serveur. On y apprend que les ingénieurs travaillant
+sur la version en production de Google Apps peuvent avoir un accès sécurisé, enregistrer et authentifier aux données 
+de production de Google Apps, c'est à dire les données des clients de Google Apps. 
+
+Les données des utilisateurs sont conservées sur les serveurs tant que l'utilisateur n'a pas suppimer la donnée en qustion
+puis vider la corbeille. Une fois la corbeille vidée, Google assure que tous les enregistrements de la donnée et toutes les références
+vers cette données sont supprimées. Cependant, la données reste présente physiquement sur le disque tant qu'elle n'a pas été recouverte pas un autre. ([@google_security_2010])
+
+Google va encore plus loin quant à la condidentialité des données en s'assurant que lorsqu'un disque dur est retiré d'un serveur et qu'il
+quitte les locaux de Google, celui-ci est totallement réécrit avec des 0 sur tout le disque avec une vérification en lecture pour confirmer
+qu'il ne reste aucune donnée.
+
+Au niveau de l'accès du personnel de Google aux données, l'entreprise applique une politique de vérification 
+de la provenance des employés et leur fait signer un accord de confidentialité.
+
+En cas de demande d'accès par un acteur externe comme la police ou le gouvernement, Google s'assure d'abord, par le biais de son équipe
+juridique, que la demande est légallement fondée.
+
+Enfin, Google s'autorise à scanner les données des utilisateur à des fins d'indexage pour l'utilisateur. En 2010, l'entreprise s'autorisait aussi à utiliser
+les données pour le ciblage de leurs publicités, mais les dernières informations sur leur politique de confidentialité pour la plateforme Google Apps for Work [@_privacy_2016]
+
+
 
 [google_apps_server_architecture]: images/google_apps_server_architecture.PNG "Example d'interface de Gmail for work" { width:auto; max-width:90% }
 
-Les services de Google sont hébergés dans les même data center que ceux pour Google Apps.[@google_security_2012] 
+Les services de Google sont hébergés dans les même data center que ceux pour Google Apps.[@google_security_2010] 
 
 ## Microsoft Office 365
 
