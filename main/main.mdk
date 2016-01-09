@@ -5,13 +5,16 @@ Document Class: [11pt]article
 Bib           : biblio/cloud
 Toc Depth     : 3 
 Logo          : False
-Cite Style    : natural
+Cite Style    : numeric
 ~a            : .tex-tooltip
 name-references: Bibliographie
+name-contents: Tables des matières
 
 
 
 [TITLE]
+
+&pagebreak;
 
 [TOC]
 
@@ -71,7 +74,7 @@ ses entreprises.
 
 
 
-
+&pagebreak;
 # IaaS : Infrastructure as a Service	
 ## Introduction et définition
 Le périmètre de cette étude se limite au cas d'une entreprise désirant migrer
@@ -105,11 +108,11 @@ Des suites comme OpenStack [^openstack] permettent la gestion de large parcs de 
 [^vsphere]: <https://www.vmware.com/products/vsphere-hypervisor>
 [^openstack]: <https://www.openstack.org/>
 
-~ Figure { #fig-hypervisor; caption: "Exemple d'architecture de gestion de matériel et virtualisation"}
+~ Figure { #fig-hypervisor; caption: "Exemple d'architecture de gestion de matériel et virtualisation"; width:70%; margin:auto;}
 ![hyperviseur-type-1]
 ~
 
-[hyperviseur-type-1]: images/hyperviseur-type-1.png "hyperviseur-type-1" { width:auto; max-width:90% }
+[hyperviseur-type-1]: images/hyperviseur-type-1.png "hyperviseur-type-1" { width:60%; max-width:90% }
 
 
 ## Compétences
@@ -275,7 +278,7 @@ recevoir des mail via son propre nom de domaine.
 
 
 [gmail_screenshot]: images/gmail_screenshot.png "Example d'interface de Gmail for work" { width:auto; max-width:90% }
-[google_apps_logo]: images/google_apps_logo.PNG "google_apps_logo" { width:auto; max-width:33%; float: right; margin: 15px }
+[google_apps_logo]: images/google_apps_logo.PNG "google_apps_logo" { width:auto; max-width:33%; float: right; margin: 15px; page-align:inplace }
 
 ### Migration
 #### Mise en place
@@ -294,8 +297,10 @@ son compte google apps.
 
 Google propose des outils pour importer les mails depuis différents services.
 
-~ Figure { #fig-myfigure; caption:"Services compatible pour l'importation de mail vers Google Apps [@google_choisir_2015]"}
+~ Figure { #fig-myfigure; caption:"Services compatible pour l'importation de mail vers Google Apps"}
 ![google_apps_migration]
+
+@google_choisir_2015
 ~
 [google_apps_migration]: images/google_mail_migration.PNG "Importer les mails vers google apps"
 
@@ -349,6 +354,8 @@ seront toujours disponibles en cas de panne d'un serveur.[@google_security_2010]
 
 ~ Figure { #fig-gapps-archit; caption: "Environnement distribué de Google Apps"}
 ![google_apps_server_architecture]
+
+@google_security_2010
 ~
 
 ### Confidentialité des données
@@ -399,7 +406,7 @@ Office 365 donne aussi la possibilité de modifier le thème des applications et
 [Manage-custom-themes-for-your-organization]: images/Manage-custom-themes-for-your-organization.png "Manage-custom-themes-for-your-organization" { width:auto; max-width:70% }
 
 
-[Logo_O365_Orange_135x30]: images/Logo_O365_Orange_135x30.png "Logo_O365_Orange_135x30" { width:auto; max-width:90%; margin: 5px 20px}
+[Logo_O365_Orange_135x30]: images/Logo_O365_Orange_135x30.png "Logo_O365_Orange_135x30" { width:20%; max-width:90%; margin: 5px 20px}
 [^microsoft_pricing]: <https://products.office.com/fr-fr/business/compare-office-365-for-business-plans>
 
 ### Migration
@@ -443,6 +450,23 @@ dans les enregistrement DNS du nom de domaine de l'entreprise. La
 procédure est donc assez simple d'autant plus que Microsoft fourni une
 application d'assitance pour réaliser ces changements. [@microsoft_inc._create_2015]
 
+#### Confidentialité
+
+Microsoft assure dans son livre blanc sur la
+sécurité  [@microsoft_inc._security_2014] que l'entreprise n'utilise pas
+les données des utilisateur de Office 365 à des fins de publicités. Les
+données, notamment les mails sont quand même scannés pour l'indexation et
+la vérification anti-malware [@woody_leonhard_microsoft_2014].
+
+Microsoft assure plus de transparence que Google puisqu'elle assure
+pouvoir dire qui a accès aux information stockées sur ses serveurs et où
+les données sont stockée.
+
+Elle applique la même politique que Google en ce qui concerne l'accès au
+données par le gouvernement : elle ne l'autorise que si un mandat a bien
+été emi et vérifier.
+ 
+
 
 ## Comparaison des offres et de prix
 
@@ -453,32 +477,79 @@ propose pas de synchronisation avec Microsoft Outlook, Contact et
 Calendar afin de ne pas favoriser la concurrence à ses propres services inclus dans
 l'offre Google Apps [@google_google_2015].
 
-Ce manque de coopération avec la suite office peut être un frein à l'utilisation de Google Apps ; c'est ce point qui a réellement 
-fait pencher l'auteur de la comparaison sur techradar [@marshall_google_2016]
+Ce manque de coopération avec la suite office peut être un frein à
+l'utilisation de Google Apps ; c'est ce point qui a réellement fait
+pencher l'auteur de la comparaison sur techradar [@marshall_google_2016]
 
-L'un des avantage que microsoft a sur google est l'implentation de sa suite office en entreprise. Depuis 20 ans, elle domine le marché.
-Google tente de récupérer ces parts de marché en rendant sa suite d'édition de documents compatible avec celle de microsoft [@ryan_kh_reasons_2015],
-Mais comme l'indique encore une fois techradar [@marshall_google_2016], si on veut utiliser Google apps et la suite office, il faut payer
-des licenses pour les deux produits alors que Office 365 for Business propose une version en ligne et hors ligne de ses logiciels avec une
-même license [@microsoft_inc._microsoft_2016]
+L'un des avantage que microsoft a sur google est l'implentation de sa
+suite office en entreprise. Depuis 20 ans, elle domine le marché. Google
+tente de récupérer ces parts de marché en rendant sa suite d'édition de
+documents compatible avec celle de microsoft [@ryan_kh_reasons_2015],
+Mais comme l'indique encore une fois techradar [@marshall_google_2016],
+si on veut utiliser Google apps et la suite office, il faut payer des
+licenses pour les deux produits alors que Office 365 for Business propose
+une version en ligne et hors ligne de ses logiciels avec une même
+license [@microsoft_inc._microsoft_2016]
 
 ~ Figure { #fig-email-price; caption:"Comparaison des prix et des offres. "; width:100%}
 ![mail_cloud_price_comparaison]
 
-[@derrick_wlodarz_office_2015]
+@derrick_wlodarz_office_2015
 ~
 
 [mail_cloud_price_comparaison]: images/mail_cloud_price_comparaison.PNG "mail_cloud_price_comparaison" { width:auto; max-width:90% }
-	
-# Conclusion
 
-En terme de fonctionnalités, les offres sont semblables et la décision devrait plutôt
-se faire sur l'environnement offert en plus du service de mail. Une
-entreprise utilisant déjà la suite Microsoft Office pourrait vouloir
-rester dans un écosystème Microsoft en souscrivant à Office 365.
+&pagebreak;
+
+## Choix de l'offre en fonction de l'entreprise
+Pour se faire une idée de l'offre à choisir, nous pouvons nous intéresser
+aux types d'entreprises qui utilisent une des deux solutions.
+
+Sur la figure [#fig-demographic-information]
+\ [@david_politis_google_2015], on peut voir que les entreprises de
+petite tailles sont plus enclines à utiliser Google Apps, mais que ce
+choix ne dépends pas de l'age de l'entreprise.
+
+~ Figure { #fig-demographic-information caption: "Choix du SaaS en fontion des nombres médians d'employés, de la taille \
+  de l'équipe informatique et de l'age de l'entreprise"}
+![demographic_information]
+
+@david_politis_google_2015
+~
+
+Un autre facteur de choix est la moyenne d'age des employés de
+l'entreprise comme le montre la figure [#fig-age-range]. Une entreprise
+constituée de jeunes employés aura plus tendance à se tourner vers Google
+Apps tandis que quand la moyenne d'age augmente, le choix se tourne vers
+Office 365.
+
+~ Figure { #fig-age-range; caption:"Choix de la plateforme en fonction de l'age des employés."}
+![age_range]
+
+@david_politis_google_2015
+~
+
+[age_range]: images/age_range.PNG "age_range" { width:auto; max-width:90% }
+
+L'étude dont fait part Davide Politis nous apprends aussi les prévisions
+d'un passage au cloud à 100% en fonction de la plateforme et de la taille
+de l'entreprise. Ainsi, pour les petite entreprises, pres de 80% des
+entreprises estiment que d'ici 2025 elles seront passée au cloud à 100%.
+Pour les entreprises moyennes et grandes utilisant Google Apps, ce
+chiffre reste le même, mais celles qui utilisent Office 365 ne sont que
+56% à estim qu'elle seront passer au cloud à 100%.
+
+
+[demographic_information]: images/demographic_information.PNG "demographic_information" { width:auto; max-width:90% }
+
+## SaaS : Conclusion
+
+En terme de fonctionnalités, les offres sont semblables et la décision
+devrait plutôt se faire sur l'environnement offert en plus du service de
+mail. Une entreprise utilisant déjà la suite Microsoft Office pourrait
+vouloir rester dans un écosystème Microsoft en souscrivant à Office 365.
 
 En terme de facilité d'installation, Google prend les devant car l'environnement est moins complexe à mettre en place.
-
 
 
 
