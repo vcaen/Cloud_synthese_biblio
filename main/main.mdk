@@ -25,12 +25,14 @@ D'après le NIST (National Institute of Standards and Technology), le cloud est 
 
 L'utilisation d'applications dans le cloud est en constante augmentation. Cependant la France se situe encore en dessous de la moyenne européenne du taux d'entreprises utilisant le cloud pour leurs applications. En effet, on compte environ 12% des entreprises françaises utilisant des services de cloud contre une moyenne de 19% dans l'Union Européenne. La Finlande sort grande gagnante puisqu'elle comptabilise 51% de taux d'utilisation du cloud par ses entreprises.
 
-~ Figure { #fig-use-stat-europ; caption: "Utilisation des services de cloud [@konstantinos_giannakouri_cloud_2014] "} ![cloud_service_usage_in_europ]
+~ Figure { #fig-use-stat-europ; caption: "Utilisation des services de cloud [@konstantinos_giannakouri_cloud_2014] "} 
+![cloud_service_usage_in_europ]
 ~
 
  [CNET](#fig-cnet) prévoit une croissance exponentielle du marché du cloud en France, une augmentation de près de 400% en 6 ans.
 
-~ Figure { #fig-cnet; caption:"Evolution prévue du marché du cloud en France entre 2012 et 2018. [@_chiffres_2014]"} ![evolution_cloud]
+~ Figure { #fig-cnet; caption:"Evolution prévue du marché du cloud en France entre 2012 et 2018. [@_chiffres_2014]"} 
+![evolution_cloud]
 ~
 
 [evolution_cloud]: images/evolution_cloud.jpg "evolution_cloud" { width:auto; max-width:90% }
@@ -57,7 +59,8 @@ La mise à disposition de ressources cloud se base généralement sur des techno
 [^vsphere]: <https://www.vmware.com/products/vsphere-hypervisor>
 [^openstack]: <https://www.openstack.org/>
 
-~ Figure { #fig-hypervisor; caption: "Exemple d'architecture de gestion de matériel et virtualisation"; width:70%; margin:auto;} ![hyperviseur-type-1]
+~ Figure { #fig-hypervisor; caption: "Exemple d'architecture de gestion de matériel et virtualisation"; width:70%; margin:auto;} 
+![hyperviseur-type-1]
 ~
 
 [hyperviseur-type-1]: images/hyperviseur-type-1.png "hyperviseur-type-1" { width:60%; max-width:90% }
@@ -93,7 +96,8 @@ Nous limiterons ici l'étude à Amazon EC2 et OVH.
 
 Nous avons choisi d'étudier plus en détail l'infrastructure EC2 d'Amazon Webservice, Amazon étant à la fois un pionnier historique des offres cloud [@computerweekly_history], mais également loin devant ses principaux concurrents en terme de parts de marché, toutes offres confondues [@synergy.market_shares]. Amazon propose une multitude d'offres cloud différentes [@aws_plainenglish], EC2 étant l'offre typique IaaS permettant d'instancier dynamiquement des machines virtuelles dans le cloud, et d'y déployer des applications ou effectuer des calculs. 
 
-~ Figure { #fig-aws_market_shares; caption: "Parts de marché des fournisseurs cloud [@synergy.market_shares]"} ![CIS_Q414_final]
+~ Figure { #fig-aws_market_shares; caption: "Parts de marché des fournisseurs cloud [@synergy.market_shares]"} 
+![CIS_Q414_final]
 ~
 
 [CIS_Q414_final]: images/CIS_Q414_final.jpg "CIS_Q414_final" { width:auto; max-width:90% }
@@ -103,7 +107,8 @@ Amazon EC2 est utilisé pour des tâches variées, par exemple l'entreprise Netf
 [^EC2_Case-studies]: <https://aws.amazon.com/fr/solutions/case-studies/>
 
 L'utilisateur dispose d'une interface web (voir figure ci-dessous) permettant de gérer  les instances en cours ainsi que d'en créer de nouvelles. Une instance possède une adresse IP publique, ainsi qu'un statut. Concernant la migration, Amazon EC2 permet d'importer des machines virtuelles déjà existantes [@ec2_import_vm].
-~ Figure { #fig-ec2-console; caption: "Aperçu de la console de supervision des instances EC2"} ![EC2]
+~ Figure { #fig-ec2-console; caption: "Aperçu de la console de supervision des instances EC2"} 
+![EC2]
 ~
 
 [EC2]: images/EC2.jpg "EC2" { width:auto; max-width:90% }
@@ -140,7 +145,8 @@ Dans le cadre de cette étude, nous allons nous placer du point de vue d'une ent
 
 Google ajoute qu'un cloud est caractérisé par un service redondant et une allocation de ressources dynamique qui permet un partage des ressources CPU et de mémoire entre les utilisateurs tout en assurant la sécurité du système [@google_security_2010]
 
-~ Figure { #fig-cloud-adoption; caption:"Primary reason for cloud adoption, Springboard research, 07/2008."; margin: auto;width:70%;}  ![reason_to_adopte_cloud]
+~ Figure { #fig-cloud-adoption; caption:"Primary reason for cloud adoption, Springboard research, 07/2008."; margin: auto;width:70%;}  
+![reason_to_adopte_cloud]
 
 [reason_to_adopte_cloud]: images/reason_to_adopte_cloud.PNG "reason_to_adopte_cloud" { width:auto; max-width:90% }
 
@@ -183,7 +189,8 @@ La plateforme est hébergée de façon distribuée sur toute la planète, ce qui
 Les services que la plateforme propose sont nombreux, mais nous allons nous concentrer sur l'application Gmail qui permet de retrouver toutes les fonctionnalités offertes au grand public sur la version gratuite de Gmail mais en permettant à l'entreprise de personnaliser son interface avec par exemple son propre logo et surtout de pouvoir envoyer et recevoir des mail via son propre nom de domaine. 
 [@cloud_technology_alliance_business_2015]
 
-~ Figure { #fig-use-stat-europ; caption: "Exemple d'interface de Gmail for work"} ![gmail_screenshot]
+~ Figure { #fig-use-stat-europ; caption: "Exemple d'interface de Gmail for work"} 
+![gmail_screenshot]
 ~
 
 
@@ -202,7 +209,8 @@ D'après Techradar [@marshall_google_2016], la mise en place de Google Apps est 
 
 Google propose des outils pour importer les mails depuis différents services.
 
-~ Figure { #fig-myfigure; caption:"Services compatible pour l'importation de mail vers Google Apps"} ![google_apps_migration]
+~ Figure { #fig-myfigure; caption:"Services compatible pour l'importation de mail vers Google Apps"} 
+![google_apps_migration]
 
 @google_choisir_2015
 ~
@@ -235,7 +243,8 @@ Afin de pallier une éventuelle attaque venue de l'extérieur, Google dispose d'
 
 Sur le plan de la résistance aux dysfonctionnements, Google utilise son propre système de fichier avec un stockage distribué et anonymisé. La structure du système de fichier est conservée sur une base de données distribuée. Ainsi, Google assure que les données de ses utilisateurs seront toujours disponibles en cas de panne d'un serveur.[@google_security_2010]
 
-~ Figure { #fig-gapps-archit; caption: "Environnement distribué de Google Apps"} ![google_apps_server_architecture]
+~ Figure { #fig-gapps-archit; caption: "Environnement distribué de Google Apps"} 
+![google_apps_server_architecture]
 
 @google_security_2010
 ~
@@ -323,7 +332,8 @@ Ce manque de coopération avec la suite office peut être un frein à l'utilisat
 
 L'un des avantages que Microsoft a sur Google est l'implantation de sa suite office en entreprise. Depuis 20 ans, elle domine le marché. Google tente de récupérer ces parts de marché en rendant sa suite d'édition de documents compatible avec celle de Microsoft [@ryan_kh_reasons_2015], Mais comme l'indique encore une fois techradar [@marshall_google_2016], si on veut utiliser Google Apps et la suite office, il faut payer des licences pour les deux produits alors que Office 365 for Business propose une version en ligne et hors ligne de ses logiciels avec une même licence [@microsoft_inc._microsoft_2016]
 
-~ Figure { #fig-email-price; caption:"Comparaison des prix et des offres. "; width:100%} ![mail_cloud_price_comparaison]
+~ Figure { #fig-email-price; caption:"Comparaison des prix et des offres. "; width:100%} 
+![mail_cloud_price_comparaison]
 
 @derrick_wlodarz_office_2015
 ~
@@ -339,14 +349,16 @@ Pour se faire une idée de l'offre à choisir, nous pouvons nous intéresser aux
 Sur la figure [#fig-demographic-information] \ [@david_politis_google_2015], on peut voir que les entreprises de petite tailles sont plus enclines à utiliser Google Apps, mais que ce choix ne dépends pas de l’âge de l'entreprise.
 
 ~ Figure { #fig-demographic-information caption: "Choix du SaaS en fontion des nombres médians d'employés, de la taille \
-  de l'équipe informatique et de l'âge de l'entreprise"} ![demographic_information]
+  de l'équipe informatique et de l'âge de l'entreprise"} 
+![demographic_information]
 
 @david_politis_google_2015
 ~
 
 Un autre facteur de choix est la moyenne d’âge des employés de l'entreprise comme le montre la figure [#fig-age-range]. Une entreprise constituée de jeunes employés aura plus tendance à se tourner vers Google Apps tandis que quand la moyenne d’âge augmente, le choix se tourne vers Office 365.
 
-~ Figure { #fig-age-range; caption:"Choix de la plateforme en fonction de l’âge des employés."} ![age_range]
+~ Figure { #fig-age-range; caption:"Choix de la plateforme en fonction de l’âge des employés."} 
+![age_range]
 
 @david_politis_google_2015
 ~
