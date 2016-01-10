@@ -335,25 +335,8 @@ Elle applique la même politique que Google en ce qui concerne l'accès aux donn
  
 
 
-## Comparaison des offres et de prix
 
-Les deux offres Office 365 et Google Apps for work [#fig-email-price] facturent leurs services en fonction du nombre d'utilisateurs. Au niveau des fonctionnalités offertes, on constate qu'elles sont à peu près équivalentes. Google ne propose pas de synchronisation avec Microsoft Outlook, Contact et Calendar afin de ne pas favoriser la concurrence à ses propres services inclus dans l'offre Google Apps [@google_google_2015].
-
-Ce manque de coopération avec la suite office peut être un frein à l'utilisation de Google Apps ; c'est ce point qui a réellement fait pencher l'auteur de la comparaison sur techradar [@marshall_google_2016]
-
-L'un des avantages que Microsoft a sur Google est l'implantation de sa suite office en entreprise. Depuis 20 ans, elle domine le marché. Google tente de récupérer ces parts de marché en rendant sa suite d'édition de documents compatible avec celle de Microsoft [@ryan_kh_reasons_2015], Mais comme l'indique encore une fois techradar [@marshall_google_2016], si on veut utiliser Google Apps et la suite office, il faut payer des licences pour les deux produits alors que Office 365 for Business propose une version en ligne et hors ligne de ses logiciels avec une même licence [@microsoft_inc._microsoft_2016]
-
-~ Figure { #fig-email-price; caption:"Comparaison des prix et des offres. "; width:100%} 
-![mail_cloud_price_comparaison]
-
-@derrick_wlodarz_office_2015
-~
-
-[mail_cloud_price_comparaison]: images/mail_cloud_price_comparaison.PNG "mail_cloud_price_comparaison" { width:auto; max-width:90% }
-
-&pagebreak;
-
-## Choix de l'offre en fonction de l'entreprise
+## La repartition des offres en fonction du type d'entreprise
 
 Pour se faire une idée de l'offre à choisir, nous pouvons nous intéresser aux types d'entreprises qui utilisent une des deux solutions.
 
@@ -376,18 +359,99 @@ Un autre facteur de choix est la moyenne d’âge des employés de l'entreprise 
 
 [age_range]: images/age_range.PNG "age_range" { width:auto; max-width:90% }
 
-L'étude dont fait part Davide Politis nous apprends aussi les prévisions d'un passage au cloud à 100% en fonction de la plateforme et de la taille de l'entreprise. Ainsi, pour les petite entreprises, près de 80% des entreprises estiment que d'ici 2025 elles seront passée au cloud à 100%. Pour les entreprises moyennes et grandes utilisant Google Apps, ce chiffre reste le même, mais celles qui utilisent Office 365 ne sont que 56% à estimer qu'elle seront passé au cloud à 100%.
+L'étude dont fait part David Politis nous apprends aussi les prévisions
+d'un passage au cloud à 100% en fonction de la plateforme et de la taille
+de l'entreprise. Ainsi, pour les petite entreprises, près de 80% des
+entreprises estiment que d'ici 2025 elles seront passée au cloud à 100%.
+Pour les entreprises moyennes et grandes utilisant Google Apps, ce
+chiffre reste le même, mais celles qui utilisent Office 365 ne sont que
+56% à estimer qu'elle seront passé au cloud à 100%.
+
 
 
 [demographic_information]: images/demographic_information.PNG "demographic_information" { width:auto; max-width:90% }
 
-## SaaS : Conclusion
+## Les limites des offres
 
-En termes de fonctionnalités, les offres sont semblables et la décision devrait plutôt se faire sur l'environnement offert en plus du service de mail. Une entreprise utilisant déjà la suite Microsoft Office pourrait vouloir rester dans un écosystème Microsoft en souscrivant à Office 365.
+Les deux offres Office 365 et Google Apps for work [#fig-email-price] facturent leurs services en fonction du nombre d'utilisateurs. Au niveau des fonctionnalités offertes, on constate qu'elles sont à peu près équivalentes. Google ne propose pas de synchronisation avec Microsoft Outlook, Contact et Calendar afin de ne pas favoriser la concurrence à ses propres services inclus dans l'offre Google Apps [@google_google_2015].
 
-En termes de facilité d'installation, Google prend les devants car l'environnement est moins complexe à mettre en place.
+Même si les applications d'édition de document de Google Apps pennent en charge les formats de Microsoft office,
+il n'y a pas  d'intégration avec les application _on premise_ de Microsoft office. Ce manque de coopération avec la suite office peut être un frein à
+l'utilisation de Google Apps ; c'est ce point qui a réellement fait
+pencher l'auteur de la comparaison sur techradar [@marshall_google_2016], en particulier avec Outlook.
+
+En effet, l'un des avantages que Microsoft a sur Google est l'implantation de sa
+suite office en entreprise. Depuis 20 ans, elle domine le marché. Google
+tente de récupérer ces parts de marché en rendant sa suite d'édition de
+documents compatible avec celle de Microsoft [@ryan_kh_reasons_2015],
+mais comme l'indique encore une fois techradar [@marshall_google_2016],
+si on veut utiliser Google Apps et la suite office, il faut payer des
+licences pour les deux produits alors que Office 365 for Business propose
+une version en ligne et hors ligne de ses logiciels avec une même
+licence [@microsoft_inc._microsoft_2016].
+
+Cependant, les offres de Google sont plus succintes et on s'y perd moins.
+Là où Google propose deux forfaits différents[^google-pricing], Microsoft
+en propose septs[^microsoft-pricing] avec différentes fonctionnalités intégrées.
 
 
+~ Figure { #fig-myfigure; caption:"Comparaison Google Apps contre Office 365."; .wide}
+![office_price comparaison]
+
+@shan_sinha_official_2011, Google Product Manager
+~
+
+
+
+
+[office_price comparaison]: images/office_price-comparaison.png "office_price comparaison" { width:auto; max-width:100% }
+
+
+[^google-pricing]: https://apps.google.com/pricing.html
+[^microsoft-pricing]: https://products.office.com/en-us/business/compare-office-365-for-business-plans
+
+~ Figure { #fig-email-price; caption:"Comparaison des prix et des offres. "; width:100%} 
+![mail_cloud_price_comparaison]
+
+@derrick_wlodarz_office_2015
+~
+
+[mail_cloud_price_comparaison]: images/mail_cloud_price_comparaison.PNG "mail_cloud_price_comparaison" { width:auto; max-width:90% }
+
+## Conclusion
+
+Google et Microsoft nous proposent deux offrent concurrentes et assez similaires en ce qui concerne 
+les fonctionnalités, la sécurité et la confidentialité.
+
+Si on ne regarde que la fonction mail, Google proposant une migration depuis un serveur Exchange, les
+deux offres ne présentent aucune différence fondamentale à part l'absence d'outlook qui peut géner 
+certains utilisateurs[@marshall_google_2016].
+
+Ainsi, pour vraiment faire un choix, il faudra comparer les offres en
+fonction de ce que l'entreprise possède déjà comme environnement de
+travail. Dans le cas où l'entreprise à une forte liaison avec la suite
+Office de Microsoft, Office 365 s'avère plus intéressant car son
+intégration avec les application _on premise_ est très forte et les
+licences de ces applications sont incluses dans certains forfaits
+d'Office 365. De plus si l'entreprise possède déjà un système de gestion
+des permissions utilisateurs _Active Directory_, il serait judicieux de
+rester sur des produits microsoft comme le précise
+@woody_leonhard_microsoft_2014.
+
+Dans le cas où l'entreprise n'a pas de liaison avec la suite office, il
+faut comparer au cas par cas. On pourra préférer Office 365 si la flote
+de téléphone mobile de l'entreprise tourne sur Windows Phone car il n'y a
+pas d'application officielle de Google pour Windows Phone. Si on choisi
+la simplicité de mise en place, Google Apps for work s'avère gagnant, de
+même que si on veut une offre claire sans trop de choix.
+
+Enfin, une grande ou moyenne entreprise souhaitant migrer complètement vers une offre SaaS au plus vite, 
+on pourrait préférer Google Apps comme le laisse entendre l'étude de @david_politis_google_2015
+
+Nous pourrions appronfondire cette étude avec un cas concret d'entreprise, en analysant les besoins et l'existant afin de 
+centrer les recherches et explorer peut être d'autres offres comme [Zoho](https://www.zoho.com/) par exemple qui
+possède aussi des fonctionnalité de gestion de projet et de CRM ainsi qu'une intégration avec Google Apps for Work. 
+ 
 
 &pagebreak;
 
