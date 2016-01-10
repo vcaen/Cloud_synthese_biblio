@@ -1,14 +1,17 @@
 Title         : Synthèse Bibliographique
 Subtitle      : Cloud computing : offres, technologies, services
 Author        : Léonard Allain-Launay & Vadim Caen 
-Document Class: [11pt]article
+Document Class: [11pt]book
 Bib           : biblio/cloud
 Toc Depth     : 3 
 Logo          : False
 Cite Style    : numeric
 ~a            : .tex-tooltip
-name-references: Bibliographie
-name-contents: Tables des matières
+Locale        : fr-FR
+name-references : Bibliographie
+name-contents : Tables des matières
+
+[TITLE]
 
 [TOC]
 
