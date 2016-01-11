@@ -79,6 +79,17 @@ La mise à disposition de ressources cloud se base généralement sur des techno
 
 [hyperviseur-type-1]: images/hyperviseur-type-1.png "hyperviseur-type-1" { width:60%; max-width:90% }
 
+### Provisionning
+Le Provisionning est un terme qui désigne l'initiatlisation d'une ressource, de l'acquisition à sa mise en service [@provisionning_def]. Dans le cadre de services IaaS, on ne parle que de provisionning logiciel, le montage et cablâge des machines physique étant assuré par le fournisseur de service.
+
+Les scripts de provisionning permettent de pourvoir une machine virtuelle ou un serveur des logiciels dont il a besoin. Serveur de base de donnée, logiciel de gestion, monitoring de la machine, serveur de mail... Ces scripts sont écrits par le client avant d'installer la machine. C'est l'évolution du cloud, qui facilite l'accès à des ressources matérielles, qui pousse plus loin les problématiques de provisionning, augmentant ainsi les charges de travail des postes comme *sysadmin* ou *devOps* [@devOps_puppet_labs]. Mais cette tâche fastidieuse peut être simplifiée dans le cas de composants standards, par exemple MySQL pour une base de donnée, WordPress pour un site internet, Zimbra pour les mails, des composants pour lesquels il existe des logiciels de provisionning qui proposent des scripts open-source permettant de mettre en place rapidement et de manière idempotente des composants.
+
+Notamment, dans le cas d'__Ansible__ [^Ansible], beaucoup de "*roles*" sont publiées par la communauté sur *GitHub* pour permettre de mettre en place et d'interconnecter facilement des modules ssh, node.js, git, nginx... [@ansible_github].
+
+Puppet Labs[^Puppet] offre des solutions pour entreprises afin de gérer et maintenir des scripts de provisionning, déploiement, réservation, sur des machines et des plateformes cloud, compatibles avec les principaux fournisseurs de service cloud, ainsi qu'une communauté de partage de scripts et modules.
+
+[^Ansible] : <http://www.ansible.com/>
+[^Puppet] : <https://puppetlabs.com/>
 
 ## Compétences
 
