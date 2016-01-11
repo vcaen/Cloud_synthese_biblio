@@ -86,10 +86,10 @@ Les scripts de provisionning permettent de pourvoir une machine virtuelle ou un 
 
 Notamment, dans le cas d'__Ansible__ [^Ansible], beaucoup de "*roles*" sont publiées par la communauté sur *GitHub* pour permettre de mettre en place et d'interconnecter facilement des modules ssh, node.js, git, nginx... [@ansible_github].
 
-Puppet Labs[^Puppet] offre des solutions pour entreprises afin de gérer et maintenir des scripts de provisionning, déploiement, réservation, sur des machines et des plateformes cloud, compatibles avec les principaux fournisseurs de service cloud, ainsi qu'une communauté de partage de scripts et modules.
+__Puppet Labs__[^Puppet] offre des solutions pour entreprises afin de gérer et maintenir des scripts de provisionning, déploiement, réservation, sur des machines et des plateformes cloud, compatibles avec les principaux fournisseurs de service cloud, ainsi qu'une communauté de partage de scripts et modules.
 
-[^Ansible] : <http://www.ansible.com/>
-[^Puppet] : <https://puppetlabs.com/>
+[^Ansible]: <http://www.ansible.com/>
+[^Puppet]: <https://puppetlabs.com/>
 
 ## Compétences
 
@@ -229,7 +229,7 @@ Les services que la plateforme propose sont nombreux, mais nous allons nous conc
 D'après Techradar [@marshall_google_2016], la mise en place de Google Apps est très aisée. Il suffit de quelques secondes pour s'inscrire puis l'administrateur est dirigé vers une page d'administration contenant des rubriques pour gérer entre autre les données sur les utilisateurs. L'une des fonctionnalités que souligne l'auteur est la possibilité de créer plusieurs comptes utilisateurs à la fois à partir d'un fichier CSV[^csv]. Le problème soulevé cependant est l'impossibilité de lier ses comptes Google particuliers à son compte Google Apps.
 
 
-[^csv]: https://fr.wikipedia.org/wiki/Comma-separated_values
+[^csv]: <https://fr.wikipedia.org/wiki/Comma-separated_values>
 #### Importation des anciens emails, contacts et agendas
 
 Google propose des outils pour importer les mails depuis différents services.
@@ -318,7 +318,7 @@ Office 365 donne aussi la possibilité de modifier le thème des applications et
 D'après Techradar [@marshall_google_2016] et Woody Leohard [@woody_leonhard_microsoft_2014], la mise en place de Office 365 s'avère plus  compliquée que celle de Google Apps for work. En effet, Microsoft propose aux administrateurs de gérer les licences de leur utilisateur de façon indépendante. Ainsi certains utilisateurs peuvent obtenir une licence pour la suite office hors-ligne, tandis que d'autre n'auront que la version en ligne.
 
 Microsoft propose aussi de créer des comptes utilisateur à partir d'un fichier CSV[^office_add_user]
-[^office_add_user]: https://support.office.com/en-nz/article/Add-several-users-at-the-same-time-to-Office-365-Admin-Help-1f5767ed-e717-4f24-969c-6ea9d412ca88?ui=en-US&rs=en-NZ&ad=NZ
+[^office_add_user]: <https://support.office.com/en-nz/article/Add-several-users-at-the-same-time-to-Office-365-Admin-Help-1f5767ed-e717-4f24-969c-6ea9d412ca88?ui=en-US&rs=en-NZ&ad=NZ>
 
 #### Récupération des anciens emails
 
@@ -421,8 +421,8 @@ en propose septs[^microsoft-pricing] avec différentes fonctionnalités intégr�
 [office_price comparaison]: images/office_price-comparaison.png "office_price comparaison" { width:auto; max-width:100% }
 
 
-[^google-pricing]: https://apps.google.com/pricing.html
-[^microsoft-pricing]: https://products.office.com/en-us/business/compare-office-365-for-business-plans
+[^google-pricing]: <https://apps.google.com/pricing.html>
+[^microsoft-pricing]: <https://products.office.com/en-us/business/compare-office-365-for-business-plans>
 
 ~ Figure { #fig-email-price; caption:"Comparaison des prix et des offres. "; width:100%} 
 ![mail_cloud_price_comparaison]
